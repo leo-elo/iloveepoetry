@@ -24,9 +24,11 @@ excerpt: 'Open "Latour Swag" by Darius Kazemi This Twitter bot produces a mashup
 permalink: /en/2013/latour-swag-by-darius-kazemi/
 wp_post_id: 54
 translation: "/es/2013-es/latour-swag-por-darius-kazemi/"
+featured_image: "http://academic.uprm.edu/flores/images/latourswag.png"
 ---
 
-<figure class="wp-caption"><img alt="Screen capture of &quot;Latour Swag&quot; by Darius Kazemi. A picture of the @LatourSwag twitter profile showing its most recent tweets. Text: &quot;@latourbot + #swag: an attempt to approximate @10rdben in bot form. Tweets every 15 minutes. By @tinysubversions. It's another ploy by the Finance Ministry and you too will have swag. #SWAG. Since they are able to interrupt, these people must be tied to new interests and boylieber happy JB! #teambieber #ilovejb #SWAG #MyLife&quot;" height="499" src="http://academic.uprm.edu/flores/images/latourswag.png" width="511"/><figcaption>Open <a href="https://twitter.com/LatourSwag" target="_blank">"Latour Swag" by Darius Kazemi</a></figcaption></figure>
+
+
 
 This Twitter bot produces a mashup of the “<a href="/iloveepoetry/en/2013/bruno-latourbot-by-anonymous/" target="_blank">Bruno Latourbot</a>” and original tweets that use the #swag hashtag. Kazemi describes the selection algorithm in detail in this excerpt from <a href="http://tinysubversions.com/2013/01/new-twitter-bot-latourswag/" target="_blank">his blog posting</a> about the creation of this bot.
 <blockquote>Basically how it works is I get <a href="http://search.twitter.com/search.json?callback=?&amp;rpp=100&amp;q=%27%23swag+and%27" target="_blank">the last 100 Twitter search results for “#swag” that also contain the word “and”</a>. Then I grab the last <a href="http://search.twitter.com/search.json?callback=?&amp;rpp=100&amp;q=%27from:latourbot%27" target="_blank">100 tweets from @LatourBot</a>. I take every #swag tweet that’s not an RT and push it to an array. I take every @latourbot tweet that has “and” or “,” in it, and push it to an array. Then I say there’s a 50% chance it will be latour-then-swag, and 50% that it will be swag-then-latour. If Latour comes first, I take a random Latour tweet from the array and take all the text up to the “and” or the “,”. Then I take a random swag tweet and take the text <em>after</em> the “and” in it. Then I do <em>latour + ” and ” + swag</em>. There you go.</blockquote>

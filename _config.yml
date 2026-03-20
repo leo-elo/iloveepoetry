@@ -35,23 +35,21 @@ defaults:
       layout: post
   - scope:
       path: "_pages/en"
+      type: "pages"
     values:
       lang: "en"
       layout: page
   - scope:
       path: "_pages/es"
+      type: "pages"
     values:
       lang: "es"
       layout: page
 
 # Collections
 collections:
-  pages_en:
+  pages:
     output: true
-    permalink: /en/:name/
-  pages_es:
-    output: true
-    permalink: /es/:name/
 
 # Exclude from build
 exclude:
