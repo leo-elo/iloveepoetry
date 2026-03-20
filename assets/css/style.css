@@ -1,8 +1,7 @@
 /* ==========================================================================
    I Love E-Poetry — Red & White Theme
    Color Palette:
-     Primary (red):       #FF3F31
-     Accent (dark red):   #D9342A
+     Primary (red):       #D9342A
      Background:          #FFFFFF
      Text:                #000000
      Light accent:        #FFF0F0
@@ -44,13 +43,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #FF3F31;
+  color: #D9342A;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 a:visited {
-  color: #FF3F31;
+  color: #D9342A;
 }
 
 a:hover {
@@ -90,7 +89,7 @@ img {
    Header
    ========================================================================== */
 .site-header {
-  background: #FF3F31;
+  background: #D9342A;
   color: #fff;
   padding: 1rem 0 0;
 }
@@ -168,7 +167,7 @@ img {
 
 .lang-option.active {
   background: #fff;
-  color: #FF3F31;
+  color: #D9342A;
   border-radius: 3px;
 }
 
@@ -232,7 +231,7 @@ img {
    Post Header Bar
    ========================================================================== */
 .post-header-bar {
-  background: #FF3F31;
+  background: #D9342A;
   color: #fff;
   padding: 2rem 0;
   margin-bottom: 2rem;
@@ -289,7 +288,7 @@ img {
 }
 
 .post-content blockquote {
-  border-left: 4px solid #FF3F31;
+  border-left: 4px solid #D9342A;
   margin: 1.5em 0;
   padding: 0.75em 1.25em;
   background: #FFF0F0;
@@ -324,7 +323,7 @@ img {
 .read-work-btn {
   display: inline-block;
   padding: 0.85rem 2.5rem;
-  background: #FF3F31;
+  background: #D9342A;
   color: #fff !important;
   font-size: 1.1rem;
   font-weight: 700;
@@ -375,14 +374,14 @@ img {
   margin: 2rem auto;
   padding: 1rem;
   background: #FFF0F0;
-  border-left: 4px solid #FF3F31;
+  border-left: 4px solid #D9342A;
   border-radius: 0 4px 4px 0;
 }
 
 .translation-link,
 .translation-link:visited {
   font-weight: 600;
-  color: #FF3F31;
+  color: #D9342A;
 }
 
 .translation-link:hover {
@@ -417,7 +416,7 @@ img {
   display: inline-block;
   padding: 0.3rem 0.75rem;
   background: #FFF0F0;
-  color: #FF3F31;
+  color: #D9342A;
   border-radius: 3px;
   font-size: 0.85rem;
   font-weight: 500;
@@ -426,7 +425,7 @@ img {
 
 .category-list li a:hover,
 .category-list li a:visited:hover {
-  background: #FF3F31;
+  background: #D9342A;
   color: #fff;
   text-decoration: none;
 }
@@ -443,7 +442,7 @@ img {
   margin: 0 auto 1.5rem;
   font-size: 2rem;
   padding-bottom: 0.75rem;
-  border-bottom: 3px solid #FF3F31;
+  border-bottom: 3px solid #D9342A;
 }
 
 .page-body {
@@ -500,7 +499,7 @@ img {
 .post-card-placeholder {
   width: 100%;
   height: 200px;
-  background: linear-gradient(135deg, #FF3F31 0%, #FF6B61 100%);
+  background: linear-gradient(135deg, #D9342A 0%, #E8655C 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -527,7 +526,7 @@ img {
 }
 
 .post-card-title a:hover {
-  color: #FF3F31;
+  color: #D9342A;
 }
 
 .post-card-date {
@@ -548,7 +547,7 @@ img {
 .post-card-read-more:visited {
   font-size: 0.85rem;
   font-weight: 600;
-  color: #FF3F31;
+  color: #D9342A;
 }
 
 .post-card-read-more:hover {
@@ -569,7 +568,7 @@ img {
 .category-title {
   font-size: 1.75rem;
   padding-bottom: 0.5rem;
-  border-bottom: 3px solid #FF3F31;
+  border-bottom: 3px solid #D9342A;
 }
 
 /* ==========================================================================
@@ -594,13 +593,13 @@ img {
 .pagination a,
 .pagination a:visited {
   background: #FFF0F0;
-  color: #FF3F31;
+  color: #D9342A;
   font-weight: 500;
 }
 
 .pagination a:hover,
 .pagination a:visited:hover {
-  background: #FF3F31;
+  background: #D9342A;
   color: #fff;
   text-decoration: none;
 }
@@ -614,7 +613,7 @@ img {
    Footer
    ========================================================================== */
 .site-footer {
-  background: #FF3F31;
+  background: #D9342A;
   color: #fff;
   padding: 2rem 0;
   margin-top: auto;
@@ -797,7 +796,7 @@ img {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #FF3F31;
+  background: #D9342A;
   color: #fff;
   text-align: center;
   padding: 2rem;
@@ -845,12 +844,12 @@ img {
 .landing-btn-en,
 .landing-btn-en:visited {
   background: #fff;
-  color: #FF3F31;
+  color: #D9342A;
 }
 
 .landing-btn-en:hover {
   background: #FFF0F0;
-  color: #FF3F31;
+  color: #D9342A;
 }
 
 .landing-btn-es,
