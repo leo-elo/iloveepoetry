@@ -1,0 +1,40 @@
+{% assign current_lang = page.lang | default: 'en' %}
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="header-brand">
+      <a href="{{ '/' | relative_url }}" class="site-title">I <span class="heart">&hearts;</span> E-Poetry</a>
+      <p class="site-description">An encyclopedic resource on electronic poetry</p>
+    </div>
+
+    <div class="header-right">
+      {% include lang-switcher.html %}
+      <button class="hamburger-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="site-nav" id="siteNav">
+    <div class="container">
+      <ul class="nav-list">
+        {% if current_lang == 'es' %}
+          <li><a href="{{ '/es/' | relative_url }}">Blog</a></li>
+          <li><a href="{{ '/es/acerca-de/' | relative_url }}">Acerca de</a></li>
+          <li><a href="{{ '/es/indice/' | relative_url }}">&Iacute;ndice</a></li>
+          <li><a href="{{ '/es/metadata/' | relative_url }}">Metadata</a></li>
+          <li><a href="{{ '/es/recursos/' | relative_url }}">Recursos</a></li>
+          <li><a href="{{ '/es/contacto/' | relative_url }}">Contacto</a></li>
+        {% else %}
+          <li><a href="{{ '/en/' | relative_url }}">Blog</a></li>
+          <li><a href="{{ '/en/about/' | relative_url }}">About</a></li>
+          <li><a href="{{ '/en/index-page/' | relative_url }}">Index</a></li>
+          <li><a href="{{ '/en/metadata/' | relative_url }}">Metadata</a></li>
+          <li><a href="{{ '/en/resources/' | relative_url }}">Resources</a></li>
+          <li><a href="{{ '/en/contact/' | relative_url }}">Contact</a></li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>
+</header>

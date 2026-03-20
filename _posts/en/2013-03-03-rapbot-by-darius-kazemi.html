@@ -1,0 +1,51 @@
+---
+layout: post
+title: '"Rapbot" by Darius Kazemi'
+date: '2013-03-03 15:30:33'
+lang: en
+categories:
+- '2013'
+- bot
+- e-poetry
+- entries
+- generative
+- javascript
+- mutable
+- poetry
+- rap
+- social
+- static
+- twitter
+- uncategorized
+- wordnik
+tags:
+- darius-kazemi
+excerpt: Open "Rapbot" by Darius Kazemi This poetry generator uses the Wordnik library ’s recent rhyming functionality as dataset suitable for creating rhyming couplets in the ’80s freestyle rap tradition. Examining the source code reveals that the generating algorithm method is simple, but it’s nuanced enough to produce grammatical lines in that tradition. Kazemi wrote 57...
+permalink: /en/2013/rapbot-by-darius-kazemi/
+wp_post_id: 51
+translation: "/es/2013-es/rapbot-por-darius-kazemi/"
+---
+
+<div class="link_description">
+<figure class="wp-caption"><img alt="" class="" height="357" src="http://academic.uprm.edu/flores/images/rapbot.png" width="664"/><figcaption>Open <a href="http://rapbot.jit.su/" target="_blank">"Rapbot" by Darius Kazemi</a></figcaption></figure>
+
+This poetry generator uses the <a href="http://developer.wordnik.com/" target="_blank">Wordnik library</a>’s recent rhyming functionality as dataset suitable for creating rhyming couplets in the ’80s <a href="http://en.wikipedia.org/wiki/Freestyle_rap" target="_blank">freestyle rap</a> tradition.
+
+Examining the <a href="https://github.com/dariusk/rapbot" target="_blank">source code</a> reveals that the generating algorithm method is simple, but it’s nuanced enough to produce grammatical lines in that tradition. Kazemi wrote <a href="https://github.com/dariusk/rapbot" target="_blank">57 line templates</a> each of which was missing the last word and organized them into arrays by the part of speech of that missing word. The <a href="https://github.com/dariusk/rapbot/blob/master/rapbot.js" target="_blank">JavaScript program</a> calls rhyming words from Wordnik, along with their parts of speech, calls up random lines from the arrays, and assembles the battle rap. There are two noteworthy twists on this procedure, the occasional variable within lines between male and female terms (“sistas” and “homies” for example), and the presence of a word filter, aptly named “<a href="https://github.com/dariusk/rapbot/blob/master/badwords.txt" target="_blank">badwords.txt,</a>” which identifies and filters hateful or derogatory language.
+
+The result has the form and texture of rap without some of its color, which probably for the best, since it lacks the context of a human rapper (warts and all) to deploy such forceful language. The range of vocabulary in the Wordnik library produces results so varied that the result feels like <a href="http://en.wikipedia.org/wiki/Nerdcore" target="_blank">nerdcore hip hop</a>, as in the lines generated above, particularly:
+<blockquote>I’m smooth, you’ll never catch me acting Boolean
+Way I rock the mic you know I’m born Tennessean</blockquote>
+If the raps seem too formulaic, it bears to consider that freestyle rap battles were made possible by formal constraints and were a competitive expression of orality. In <em><a href="http://monoskop.org/images/f/ff/Ong,_Walter_J_-_Orality_and_Literacy,_2nd_ed.pdf" target="_blank">Orality and Literacy</a></em>, Walter J. Ong discusses the tradition of oral performance as distinct from verbatim (word-by-word) memorization, in the context of Parry’s study of <em>The Illiad.</em>
+<blockquote>were made up not simply of word-units but of formulas, groups of words for dealing with traditional materials, each formula shaped to fit into a hexameter line. The poet had a massive vocabulary of hexameterized phrases. With his hexameterized vocabulary, he could fabricate correct metrical lines without end, so long as he was dealing with traditional materials (57).</blockquote>
+This algorithm simulates this process with 8-9 syllable line templates that produce lines of approximately 11 syllables when the word has been added. The line templates are also focused on the traditional materials of rap battles, including agonistic language and braggadocio. As with a live performance, these raps are intended to be apprehended as a whole rather than carefully scrutinized line by line, paying close attention only to memorable lines.
+
+As with “<a href="/iloveepoetry/en/2012/metaphor-a-minute-by-darius-kazemi/" target="_blank">Metaphor-a-Minute!</a>” Kazemi encodes this social dimension for identifying particularly successful couplets. Users can share couplets they like through Twitter by simply pressing a button, which generates a tweet identified with the <a href="https://twitter.com/search/realtime?q=%23RapBot&amp;src=hash" target="_blank">#rapbot hashtag</a> and a link back to the generator.
+
+<img alt="" src="http://academic.uprm.edu/flores/images/rapbottweets.png"/>
+
+So I recommend reading the generated rap songs, as well as Kazemi’s essay “<a href="http://weblog.bocoup.com/making-a-rapbot/" target="_blank">Making a Rapbot,</a>” and sharing the lines you enjoy the most, proof of Kazemi’s “equation for making a cool textual generator: <strong><em>randomness + formulaic writing = hilarity</em></strong>.”
+
+<strong>Featured in <a href="/iloveepoetry/en/adult/genre-bot/">Genre: Bot</a></strong>
+<a href="elmcip.net/creative-work/rapbot‎" target="_blank"><img alt="elmcipthumb" class="alignnone size-full wp-image-5345" height="100" src="/iloveepoetry/assets/images/wp-content/uploads/2013/05/elmcipthumb.png" width="208"/></a>
+</div>

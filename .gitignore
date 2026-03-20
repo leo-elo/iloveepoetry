@@ -1,0 +1,14 @@
+.DS_Store
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+Gemfile.lock
+scripts/*.log
+scripts/*_report.json
+scripts/image_manifest.json
+scripts/url_map.json
+scripts/image_urls.txt
+scripts/__pycache__/
+*.pyc

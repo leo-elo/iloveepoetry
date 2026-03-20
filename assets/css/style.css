@@ -1,0 +1,850 @@
+/* ==========================================================================
+   I Love E-Poetry — Minimal Scholarly Theme
+   Color Palette:
+     Primary (dark navy): #1D3557
+     Accent (heart red):  #E63946
+     Light accent:        #F1FAEE
+     Background:          #FFFFFF
+     Text:                #333333
+   ========================================================================== */
+
+/* --- Reset & Base --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  background: #fff;
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #1D3557;
+  line-height: 1.3;
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: #E63946;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #1D3557;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* --- Container --- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* --- Site Content --- */
+.site-content {
+  flex: 1;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.site-header {
+  background: #1D3557;
+  color: #fff;
+  padding: 1rem 0 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.site-title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.site-title:hover {
+  color: #F1FAEE;
+}
+
+.site-title .heart {
+  color: #E63946;
+  font-size: 1.2em;
+}
+
+.site-description {
+  font-size: 0.85rem;
+  color: #A8DADC;
+  font-style: italic;
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* --- Language Switcher --- */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.lang-option {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  color: #A8DADC;
+  transition: background 0.2s, color 0.2s;
+}
+
+.lang-option:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.lang-option.active {
+  background: #E63946;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.lang-divider {
+  color: #A8DADC;
+  user-select: none;
+}
+
+/* --- Hamburger --- */
+.hamburger-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger-bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* --- Navigation --- */
+.site-nav {
+  margin-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li a {
+  display: block;
+  padding: 0.7rem 1rem;
+  color: #F1FAEE;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-list li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+/* ==========================================================================
+   Post Header Bar
+   ========================================================================== */
+.post-header-bar {
+  background: #E63946;
+  color: #fff;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.post-header-bar .post-title {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.post-header-bar .post-date {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   Post Body
+   ========================================================================== */
+.post-body {
+  padding: 1rem 0 3rem;
+}
+
+.post-featured-image {
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.post-featured-image img {
+  width: 100%;
+  display: block;
+}
+
+.post-content {
+  max-width: 780px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.post-content p {
+  margin-bottom: 1.25em;
+}
+
+.post-content h2 {
+  margin-top: 2em;
+}
+
+.post-content h3 {
+  margin-top: 1.5em;
+}
+
+.post-content blockquote {
+  border-left: 4px solid #E63946;
+  margin: 1.5em 0;
+  padding: 0.75em 1.25em;
+  background: #F1FAEE;
+  font-style: italic;
+  color: #555;
+}
+
+.post-content pre {
+  background: #1D3557;
+  color: #F1FAEE;
+  padding: 1rem 1.25rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 1.5em 0;
+}
+
+.post-content code {
+  font-size: 0.9em;
+}
+
+.post-content img {
+  border-radius: 4px;
+}
+
+/* --- Translation Link --- */
+.post-translation {
+  margin: 2rem 0;
+  padding: 1rem;
+  background: #F1FAEE;
+  border-left: 4px solid #1D3557;
+  border-radius: 0 4px 4px 0;
+}
+
+.translation-link {
+  font-weight: 600;
+  color: #1D3557;
+}
+
+.translation-link:hover {
+  color: #E63946;
+}
+
+/* --- Categories --- */
+.post-categories {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.post-categories h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+.category-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.category-list li a {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  background: #F1FAEE;
+  color: #1D3557;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.category-list li a:hover {
+  background: #E63946;
+  color: #fff;
+}
+
+/* ==========================================================================
+   Page Layout
+   ========================================================================== */
+.page-content {
+  padding: 2.5rem 0 3rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid #E63946;
+}
+
+.page-body {
+  max-width: 780px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.page-body p {
+  margin-bottom: 1.25em;
+}
+
+/* ==========================================================================
+   Home / Post Grid
+   ========================================================================== */
+.home-page {
+  padding: 2.5rem 0 3rem;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* ==========================================================================
+   Post Card
+   ========================================================================== */
+.post-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.post-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.post-card-image-link {
+  display: block;
+}
+
+.post-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.post-card-placeholder {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, #1D3557 0%, #457B9D 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-heart {
+  font-size: 3rem;
+  color: #E63946;
+  opacity: 0.8;
+}
+
+.post-card-body {
+  padding: 1.25rem;
+}
+
+.post-card-title {
+  font-size: 1.15rem;
+  margin-bottom: 0.3rem;
+}
+
+.post-card-title a {
+  color: #1D3557;
+}
+
+.post-card-title a:hover {
+  color: #E63946;
+}
+
+.post-card-date {
+  display: block;
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 0.6rem;
+}
+
+.post-card-excerpt {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.post-card-read-more {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #E63946;
+}
+
+.post-card-read-more:hover {
+  color: #1D3557;
+}
+
+/* ==========================================================================
+   Category Page
+   ========================================================================== */
+.category-page {
+  padding: 2.5rem 0 3rem;
+}
+
+.category-header {
+  margin-bottom: 2rem;
+}
+
+.category-title {
+  font-size: 1.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #E63946;
+}
+
+/* ==========================================================================
+   Pagination
+   ========================================================================== */
+.pagination {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.pagination a,
+.pagination span {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.pagination a {
+  background: #F1FAEE;
+  color: #1D3557;
+  font-weight: 500;
+}
+
+.pagination a:hover {
+  background: #E63946;
+  color: #fff;
+}
+
+.pagination-info {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.site-footer {
+  background: #1D3557;
+  color: #fff;
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-search {
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.search-input:focus {
+  border-color: #E63946;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* --- Search Results --- */
+.search-results {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  color: #333;
+  border-radius: 6px;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 0.5rem;
+  z-index: 100;
+}
+
+.search-results.hidden {
+  display: none;
+}
+
+.search-result-item {
+  display: block;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+  transition: background 0.15s;
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-item:hover {
+  background: #F1FAEE;
+}
+
+.search-result-title {
+  font-weight: 600;
+  color: #1D3557;
+  font-size: 0.9rem;
+  margin-bottom: 0.15rem;
+}
+
+.search-result-excerpt {
+  font-size: 0.8rem;
+  color: #888;
+  line-height: 1.4;
+}
+
+.search-result-meta {
+  font-size: 0.75rem;
+  color: #aaa;
+  margin-top: 0.2rem;
+}
+
+.search-no-results {
+  padding: 1rem;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* --- Footer Info --- */
+.footer-copyright {
+  font-size: 0.85rem;
+  color: #A8DADC;
+  margin: 0;
+}
+
+.footer-copyright a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer-copyright a:hover {
+  color: #E63946;
+}
+
+/* ==========================================================================
+   WordPress Content Compatibility
+   ========================================================================== */
+.wp-caption {
+  max-width: 100%;
+  margin: 1.5em 0;
+}
+
+.wp-caption img {
+  display: block;
+  max-width: 100%;
+}
+
+.wp-caption-text {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+.alignleft {
+  float: left;
+  margin: 0.5em 1.5em 1em 0;
+}
+
+.alignright {
+  float: right;
+  margin: 0.5em 0 1em 1.5em;
+}
+
+.aligncenter {
+  display: block;
+  margin: 1.5em auto;
+  text-align: center;
+}
+
+.wp-block-image {
+  margin: 1.5em 0;
+}
+
+.wp-block-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wp-block-image figcaption {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Landing Page (Language Selector)
+   ========================================================================== */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #1D3557;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.landing-title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.landing-title .heart {
+  color: #E63946;
+  font-size: 1.1em;
+}
+
+.landing-subtitle {
+  font-size: 1.1rem;
+  color: #A8DADC;
+  font-style: italic;
+  margin-bottom: 2.5rem;
+}
+
+.landing-buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.landing-btn {
+  display: inline-block;
+  padding: 0.9rem 2.5rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.landing-btn:hover {
+  transform: translateY(-2px);
+}
+
+.landing-btn-en {
+  background: #E63946;
+  color: #fff;
+}
+
+.landing-btn-en:hover {
+  background: #cf2f3c;
+  color: #fff;
+}
+
+.landing-btn-es {
+  background: #fff;
+  color: #1D3557;
+}
+
+.landing-btn-es:hover {
+  background: #F1FAEE;
+  color: #1D3557;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 768px) {
+  .hamburger-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    display: none;
+    margin-top: 0;
+    border-top: none;
+    background: #162b47;
+  }
+
+  .site-nav.open {
+    display: block;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .nav-list li a {
+    padding: 0.8rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .header-inner {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .site-title {
+    font-size: 1.35rem;
+  }
+
+  .posts-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .post-header-bar .post-title {
+    font-size: 1.5rem;
+  }
+
+  .landing-title {
+    font-size: 2.25rem;
+  }
+
+  .landing-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* WordPress responsive */
+  .alignleft,
+  .alignright {
+    float: none;
+    display: block;
+    margin: 1em auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-card-image,
+  .post-card-placeholder {
+    height: 160px;
+  }
+
+  .site-description {
+    display: none;
+  }
+}

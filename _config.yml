@@ -1,0 +1,64 @@
+title: "I Love E-Poetry"
+description: "An encyclopedic resource on electronic poetry"
+url: "https://leo-elo.github.io"
+baseurl: "/iloveepoetry"
+author: "Leonardo Flores"
+
+# Build
+markdown: kramdown
+highlighter: rouge
+
+# Pagination
+pagination:
+  enabled: false
+  per_page: 12
+  permalink: "/page-:num/"
+  title: ":title"
+  sort_field: "date"
+  sort_reverse: true
+
+# Plugins
+plugins:
+  - jekyll-paginate-v2
+
+# Default front matter
+defaults:
+  - scope:
+      path: "_posts/en"
+    values:
+      lang: "en"
+      layout: post
+  - scope:
+      path: "_posts/es"
+    values:
+      lang: "es"
+      layout: post
+  - scope:
+      path: "_pages/en"
+    values:
+      lang: "en"
+      layout: page
+  - scope:
+      path: "_pages/es"
+    values:
+      lang: "es"
+      layout: page
+
+# Collections
+collections:
+  pages_en:
+    output: true
+    permalink: /en/:name/
+  pages_es:
+    output: true
+    permalink: /es/:name/
+
+# Exclude from build
+exclude:
+  - scripts/
+  - Gemfile
+  - Gemfile.lock
+  - "*.py"
+  - README.md
+  - vendor
+  - node_modules

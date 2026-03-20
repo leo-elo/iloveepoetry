@@ -1,0 +1,77 @@
+---
+layout: post
+title: '"Sea and Spar Between" por Nick Montfort y Stephanie Strickland'
+date: '2018-04-09 23:31:28'
+lang: es
+categories:
+- e-poetry-es
+- entries-es
+- united-states-es
+- static-es
+- generative-es
+- javascript-es
+- poetry-es
+- responsive-es
+- sin-categorizar
+excerpt: Abrir "Sea and Spar Between" por Nick Montfort y Stephanie Strickland Este poema generativo produce un experto "mashup" de la poesía de Emily Dickinson y Moby Dick de Herman Melville, descrito en detalle por los autores en la introducción de su obra. Sea and Spar Between es un generador de poesía que define un espacio...
+permalink: /es/e-poetry-es/sea-and-spar-between-por-nick-montfort-y-stephanie-strickland/
+wp_post_id: 14272
+translation: "/en/2010/sea-and-spar-between-by-nick-montfort-and-stephanie/"
+---
+
+<figure class="wp-caption"><img src="http://academic.uprm.edu/flores/images/seaandspar.png" alt="image" width="583" height="300" /><figcaption>Abrir <a href="http://blogs.saic.edu/dearnavigator/winter2010/nick-montfort-stephanie-strickland-sea-and-spar-between/" target="_blank" rel="noopener">"Sea and Spar Between" por Nick Montfort y Stephanie Strickland</a></figcaption></figure>
+
+<span id="result_box" class="" lang="es" tabindex="-1">Este poema generativo produce un experto "mashup" de la poesía de Emily Dickinson y Moby Dick de Herman Melville, descrito en detalle por los autores en la introducción de su obra.</span>
+<blockquote>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+
+<span id="result_box" class="" lang="es" tabindex="-1"><strong>Sea and Spar Between</strong> es un generador de poesía que define un espacio de lenguaje poblado por un número de estrofas comparable a la cantidad de peces en el mar, alrededor de 225 billones. <span class="">Cada estrofa está indicada por dos coordenadas, como con latitud y longitud.</span> Van desde 0: 0 a 14992383: 14992383.</span>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></blockquote>
+<span id="result_box" class="" lang="es" tabindex="-1">En la tradición de <a href="http://leonardoflores.net/tagged/generative">poemas generativos</a> masivos iniciados por <a href="http://fr.wikipedia.org/wiki/Cent_mille_milliards_de_po%C3%A8mes">Cent Mille Milliards de Poémes</a> de Raymond Queneau, este es un texto imposible de leer por completo en la vida, requiriendo 6,421,232,876.71 años de lectura, 24 horas al día, 7 días a la semana, 365 días al año (con un día de descanso en años bisiestos) - si asigna 30 segundos para leer cada estrofa. <span class="">Afortunadamente, así como uno no necesita navegar los siete mares para apreciarlos, este poema no necesita ser aprehendido en su totalidad para ser disfrutado.</span> <span class="">Y Montfort y Strickland nos han proporcionado una interfaz que invita a la exploración tanto de forma fortuita como precisa.</span></span>
+
+<span id="result_box" class="" lang="es" tabindex="-1">Una característica distintiva de este poema es que, aunque es generativo, no es aleatorio ni <a href="http://leonardoflores.net/tagstypology">mutable</a>. Cada permutación posible se expresa espacialmente en el lienzo y se numera con <a href="http://en.wikipedia.org/wiki/Cartesian_coordinate_system">coordenadas X, Y</a>, lo que significa que puede volver a leerla, tomar nota de las coordenadas para compartir pasajes e introducir coordenadas para explorarla estratégicamente. Al colocar a los lectores en una estrofa determinada aleatoriamente, se nos anima a descubrir nuevas partes de esta investigación poética. <span class="">La imagen de la captura de pantalla anterior se toma de una asignación aleatoria de este tipo</span></span>
+
+<span class="cwcot"><span id="result_box" class="" lang="es" tabindex="-1">En un intento de trazar algunas de estas aguas poéticas, ingresé las coordenadas de inicio (0:0) y final (14992383: 14992383) para ver el rango de permutaciones (ver a continuación).</span></span>
+
+<span class="cwcot"><img src="http://academic.uprm.edu/flores/images/seaandsparbegin.png" alt="image" /></span>
+
+<span id="result_box" class="" lang="es" tabindex="-1">Lee la estrofa 0:0 en el centro y las estrofas que la rodean para notar similitudes y percibirás un patrón en la forma en que la estructura organiza la exploración de cada permutación en las variables. Montfort y Strickland han elegido sabiamente no hacerlo demasiado similar u obvio para evitar la monotonía, pero hay una lógica espacial y matemática para el arreglo, que puede descubrirse en el <a href="http://www.saic.edu/webspaces/portal/degrees_resources/departments/writing/DNSP11_SeaandSparBetween/sea_spar.js">código fuente</a> por aquellos interesados en comprender ese mecanismo en particular.</span>
+
+<span class="cwcot"><span id="result_box" class="" lang="es" tabindex="-1"><span class="alt-edited">Se puede descubrir un detalle interesante sobre su estructura que se ilumina con el código leyendo la estrofa situada en la esquina superior izquierda de la captura de pantalla, diagonal de la estrofa 0:0. Léalo en la imagen de arriba y luego examine la imagen siguiente, capturada en pantalla desde la última coordenada del conjunto.</span></span></span>
+
+<span class="cwcot"><img src="http://academic.uprm.edu/flores/images/seaandsparend.png" alt="image" width="873" height="300" /></span>
+
+<span id="result_box" class="" lang="es" tabindex="-1"><span class="alt-edited">La estrofa en la esquina inferior derecha es la primera (0:0), lo que significa que no se trata de un dibujo plano con bordes, sino uno circular con el extremo que vuelve al principio. La documentación del código fuente explica que la estructura es la de un <a href="http://en.wikipedia.org/wiki/Torus">toro</a>, y me imagino que se forma alrededor del círculo diagonal definido por la secuencia que va de 0:0, 1:1, 2:2, hasta 14992383 : 14992383 Por esa lógica, el punto más alejado desde el principio es el punto medio, 7496191.5 : 7496191.5 (redondeado al siguiente entero), que se muestra a continuación.</span></span>
+
+<span class="cwcot"><img src="http://academic.uprm.edu/flores/images/seaandsparmiddle.png" alt="image" /></span>
+
+<span class="cwcot"><span id="result_box" class="" lang="es" tabindex="-1"><span class="alt-edited">¿Cuán temática o estilísticamente distante es este punto medio desde el principio y el final? No muy, pero uno puede notar inmediatamente algunos de los patrones, variaciones y variables recurrentes en torno a la frase "lo artificial es la tierra," cada uno de los cuales construye un tipo de afirmación diferente. La lectura de estas estrofas axiales puede revelar una mayor comprensión de cómo el conjunto de datos del poema informa al poema en su conjunto, como dividir el poema en una grilla y trazar su estructura en regiones. Leer el código fuente también revelaría gran parte de su lógica interna, pero leer solo el código no hace justicia a la complejidad emergente de la pieza.</span></span></span>
+
+<span id="result_box" class="" lang="es" tabindex="-1"><span class="alt-edited">Sugiero tomar una variedad de enfoques para leer este trabajo además de los descritos anteriormente, incluyendo volver a cargar la página para ir a una ubicación aleatoria diferente y usar el puntero del ratón para explorar direcciones intrigantes en las estrofas. Y acepte que nunca conocerá todo este mar poético, aunque puede trazar algunas de sus corrientes, costas y <a href="http://www.bopsecrets.org/SI/urbgeog.htm">psicogeografía</a>.</span></span>
+
+<strong>Presentado en </strong><a href="http://iloveepoetry.org/?page_id=6835">Avenues of Access</a>
+
+Traducido por Reina Santiago
+
+<a href="http://www.elmcip.net/node/978" target="_blank" rel="noopener"><span class="cwcot"><img src="http://academic.uprm.edu/flores/images/elmcipthumb.png" alt="" /></span></a>

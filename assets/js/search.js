@@ -1,0 +1,188 @@
+(function () {
+  "use strict";
+
+  var searchData = null;
+  var searchInput = document.getElementById("footerSearchInput");
+  var searchResults = document.getElementById("searchResults");
+  var debounceTimer = null;
+
+  // Detect baseurl from the current page's path or fall back to /iloveepoetry
+  function getBaseUrl() {
+    // Check for a meta tag or known path pattern
+    var path = window.location.pathname;
+    // If served with a baseurl like /iloveepoetry, extract it
+    var match = path.match(/^(\/iloveepoetry)/);
+    if (match) {
+      return match[1];
+    }
+    // If running at root
+    return "";
+  }
+
+  var baseUrl = getBaseUrl();
+
+  // Load search data
+  function loadSearchData() {
+    if (searchData !== null) return;
+
+    var url = baseUrl + "/search-data.json";
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", url, true);
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        try {
+          searchData = JSON.parse(xhr.responseText);
+        } catch (e) {
+          searchData = [];
+        }
+      }
+    };
+    xhr.send();
+  }
+
+  // Score a post against the query
+  function scorePost(post, query) {
+    var q = query.toLowerCase();
+    var score = 0;
+
+    if (post.title && post.title.toLowerCase().indexOf(q) !== -1) {
+      score += 10;
+    }
+    if (post.excerpt && post.excerpt.toLowerCase().indexOf(q) !== -1) {
+      score += 5;
+    }
+    if (post.category && post.category.toLowerCase().indexOf(q) !== -1) {
+      score += 3;
+    }
+
+    return score;
+  }
+
+  // Perform the search
+  function performSearch(query) {
+    if (!searchData || !query || query.trim().length < 2) {
+      hideResults();
+      return;
+    }
+
+    var results = [];
+    for (var i = 0; i < searchData.length; i++) {
+      var s = scorePost(searchData[i], query);
+      if (s > 0) {
+        results.push({ post: searchData[i], score: s });
+      }
+    }
+
+    // Sort by score descending
+    results.sort(function (a, b) {
+      return b.score - a.score;
+    });
+
+    // Top 10
+    results = results.slice(0, 10);
+
+    displayResults(results, query);
+  }
+
+  // Display results in the dropdown
+  function displayResults(results, query) {
+    if (!searchResults) return;
+
+    if (results.length === 0) {
+      searchResults.innerHTML =
+        '<div class="search-no-results">No results found for "' +
+        escapeHtml(query) +
+        '"</div>';
+      searchResults.classList.remove("hidden");
+      return;
+    }
+
+    var html = "";
+    for (var i = 0; i < results.length; i++) {
+      var post = results[i].post;
+      var postUrl = baseUrl + post.url;
+      html += '<a class="search-result-item" href="' + escapeHtml(postUrl) + '">';
+      html +=
+        '<div class="search-result-title">' + escapeHtml(post.title) + "</div>";
+      if (post.excerpt) {
+        html +=
+          '<div class="search-result-excerpt">' +
+          escapeHtml(truncate(post.excerpt, 100)) +
+          "</div>";
+      }
+      if (post.date || post.category) {
+        html += '<div class="search-result-meta">';
+        if (post.date) html += escapeHtml(post.date);
+        if (post.date && post.category) html += " &middot; ";
+        if (post.category) html += escapeHtml(post.category);
+        html += "</div>";
+      }
+      html += "</a>";
+    }
+
+    searchResults.innerHTML = html;
+    searchResults.classList.remove("hidden");
+  }
+
+  function hideResults() {
+    if (searchResults) {
+      searchResults.classList.add("hidden");
+      searchResults.innerHTML = "";
+    }
+  }
+
+  function escapeHtml(str) {
+    if (!str) return "";
+    return str
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function truncate(str, len) {
+    if (!str) return "";
+    if (str.length <= len) return str;
+    return str.substring(0, len) + "...";
+  }
+
+  // Debounced search input
+  if (searchInput) {
+    searchInput.addEventListener("focus", function () {
+      loadSearchData();
+    });
+
+    searchInput.addEventListener("input", function () {
+      var query = this.value;
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(function () {
+        performSearch(query);
+      }, 300);
+    });
+  }
+
+  // Close results on outside click
+  document.addEventListener("click", function (e) {
+    if (
+      searchResults &&
+      searchInput &&
+      !searchResults.contains(e.target) &&
+      e.target !== searchInput
+    ) {
+      hideResults();
+    }
+  });
+
+  // Mobile hamburger menu toggle
+  document.addEventListener("DOMContentLoaded", function () {
+    var toggle = document.querySelector(".hamburger-toggle");
+    var nav = document.getElementById("siteNav");
+
+    if (toggle && nav) {
+      toggle.addEventListener("click", function () {
+        var isOpen = nav.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+    }
+  });
+})();

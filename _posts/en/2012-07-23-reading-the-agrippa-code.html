@@ -1,0 +1,54 @@
+---
+layout: post
+title: Reading the Agrippa Code (part 4 of 4)
+date: '2012-07-23 21:02:00'
+lang: en
+categories:
+- '1992'
+- agrippa
+- e-poetry
+- entries
+- kinetic
+- macintosh-common-lisp
+- poetry
+- scheduled
+- static
+- uncategorized
+tags:
+- anonymous-programmer
+- dennis-ashbaugh
+- kevin-begos-jr
+- william-gibson
+excerpt: Reading the Agrippa Code (part 4 of 4) Twelve days after launching the Agrippa Challenge on July 10, 2012, Quinn Dupont made the official announcement that it had been “cracked.” It was even easy, for those with the right kind of training in programming, mathematics, and cryptography— as becomes apparent from the published submissions. The...
+permalink: /en/1992/reading-the-agrippa-code/
+wp_post_id: 296
+---
+
+<figure class="wp-caption"><a href=" http://www.crackingagrippa.net/submissions-toc.htm"><img alt="Reading the Agrippa Code (part 4 of 4)" class="size-medium wp-image-5999" height="147" src="/iloveepoetry/assets/images/wp-content/uploads/2012/07/agrippacode-300x147.png" title="Reading the Agrippa Code (part 4 of 4)" width="300"/></a> <a href="http://www.crackingagrippa.net/submissions-toc.html">Reading the Agrippa Code (part 4 of 4)</a></figure>
+<div class="link_description">
+
+Twelve days after launching the <a href="http://www.crackingagrippa.net/" target="_blank">Agrippa Challenge</a> on July 10, 2012, Quinn Dupont made the official announcement that it had been “cracked.”
+
+It was even easy, for those with the right kind of training in programming, mathematics, and cryptography— as becomes apparent from the published submissions. The link above leads to a great resource with fascinating analyses that help readers understand how the poem was encrypted and decrypted, as well as its self-destruct mechanism. So now that we know how it works, what do we do with that information?
+
+We read it, of course. Since we are closer to the text (as discussed in <a href="http://leonardoflores.net/tagged/William-Gibson" target="_blank">previous postings on <em>Agrippa</em></a>) and can integrate the code into the reading.
+
+In looking at some of the design choices made by the anonymous programmer, it seems that <em>Agrippa</em>’s “cryptographical weakness” leads to greater artistic strength. Like the flimsy locks one can find on diaries, the encryption used in this poem is more symbolic than safe. Its mechanisms are tied to strategies in the poem as a whole. For example, the use of genetic code informs two meaningful choices by the programmer:
+<ol>
+<li>The use of 3-character blocks in the encryption of the text, weakens the encoding, allowing the encryption key to be discovered through a <a href="http://www.crackingagrippa.net/submissions/ayal_ryger.html" target="_blank">simple</a> mathematical “<a href="http://www.crackingagrippa.net/submissions/nikita_shulga.html" target="_blank">brute-force attack</a>.” This corresponds to the number of letters in the word “DNA:” an important motif for heredity in a poem centered on a photo album belonging to the speaker’s father.</li>
+<li>Genetics are also used to “destroy” the program by writing a fixed CTAG sequence (the <a href="http://en.wikipedia.org/wiki/Nucleobases" target="_blank">bases</a> of DNA) over 6,000 bytes of the program (<a href="http://www.crackingagrippa.net/submissions/brian_carnes.html#self_destruct" target="_blank">see Bryan Carnes’ explanation</a>), rendering it inoperable. Because it is fixed, however, the corrupted program can be “uncorrupted” and played again.</li>
+</ol>
+It is curious that genetic sequences are used to obfuscate and hide the text from the readers, when the purpose of such codes is to pass along information to future generations. The biological impulse to reproduce is echoed in the urge to photograph, preserve, and document one’s life in a photo album— as the speaker’s father has done through both biological and photographic mechanisms. For William Gibson, Dennis Ashbaugh, the anonymous programmer, and Kevin Begos, Jr. to remix biological, photographic, printing, and programming mechanisms in a poem (one of the oldest mnemonic technologies) is to design a work for more prolific reproduction than a <a href="http://en.wikipedia.org/wiki/Drosophila" target="_blank">drosophila</a><a href="http://en.wikipedia.org/wiki/Drosophila" target="_blank"> fruit fly</a> (see “<a href="http://agrippa.english.ucsb.edu/category/documents-subcategories/the-dna-code" target="_blank">The DNA Code</a>”), especially after presenting the hacker community with such an open challenge.
+
+The fact that the text of the poem is encoded to begin with, simply highlights something true of all digital and analog texts: they are always already encoded. Writing is a code, as are <a href="http://en.wikipedia.org/wiki/Alphabet" target="_blank">alphabets</a>, <a href="http://en.wikipedia.org/wiki/Natural_language" target="_blank">natural languages</a>, <a href="http://en.wikipedia.org/wiki/Binary_code" target="_blank">binary code</a>, <a href="http://en.wikipedia.org/wiki/ASCII" target="_blank">ASCII codes</a>, <a href="http://www.webopedia.com/TERM/H/high_level_language.html" target="_blank">high-level programming languages</a> (like <a href="http://www.mactech.com/articles/mactech/Vol.09/09.01/MCL/index.html" target="_blank">Macintosh Common Lisp</a> used to program <em>Agrippa</em>), compiled <a href="http://www.webopedia.com/TERM/A/assembly_language.html" target="_blank">assembly languages</a>, and <a href="http://www.webopedia.com/TERM/M/machine_language.html" target="_blank">machine languages</a>. This is also true in the analog world, as Martha Nell Smith demonstrated so well her in exploring <a href="http://www.emilydickinson.org/letter/hb90.htm" target="_blank">Emily Dickinson’s manuscripts</a> and their <a href="http://www.emilydickinson.org/letter/phb90.htm" target="_blank">printings</a>. From this perspective, the performance of a text, a.k.a. the act of reading, can be understood as a decoding into language, thought, experience.
+
+To read some final thoughts on the cracked <em>Agrippa</em> code, copy and paste the following text into this JavaScript implementation of <a href="http://www.crackingagrippa.net/submissions/files/agrippa_in_action.html" target="_blank">the Agrippa encryption program</a> and decode it.
+
+936E3D76CA13BA18F46AAD62C92FDE97829E88F8F0FDAA84
+F4EC7DB4A5C3BA18F46A2B3B683357EDC21380B6C452F1E6
+EEA313BA18F46A3DFAE7F5940AB6C4B1EA4CF2AF350C001E
+6EC38495FD948DA4FA07F4790EC0677EA8BF7421CA351E44
+F10534BA089DF7F9F0F7F9F07E2800
+
+<a href="http://www.elmcip.net/node/2277" target="_blank"><img alt="" src="http://academic.uprm.edu/flores/images/elmcipthumb.png"/></a>
+</div>

@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="container home-page">
+  <div class="posts-grid">
+    {% assign current_lang = page.lang | default: 'en' %}
+    {% assign filtered_posts = "" | split: "" %}
+    {% for post in site.posts %}
+      {% assign post_lang = post.lang | default: 'en' %}
+      {% if post_lang == current_lang %}
+        {% assign filtered_posts = filtered_posts | push: post %}
+      {% endif %}
+    {% endfor %}
+
+    {% assign paginate_count = 12 %}
+    {% for post in filtered_posts limit: paginate_count %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+  </div>
+
+  {% if filtered_posts.size > paginate_count %}
+  <nav class="pagination" aria-label="{% if current_lang == 'es' %}Navegación de páginas{% else %}Page navigation{% endif %}">
+    <span class="pagination-info">
+      {% if current_lang == 'es' %}
+        Mostrando {{ paginate_count }} de {{ filtered_posts.size }} entradas
+      {% else %}
+        Showing {{ paginate_count }} of {{ filtered_posts.size }} posts
+      {% endif %}
+    </span>
+  </nav>
+  {% endif %}
+
+  {{ content }}
+</div>

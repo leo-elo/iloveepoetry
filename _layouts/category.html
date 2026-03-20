@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="container category-page">
+  <header class="category-header">
+    <h1 class="category-title">{{ page.category_name }}</h1>
+  </header>
+
+  <div class="posts-grid">
+    {% assign current_lang = page.lang | default: 'en' %}
+    {% for post in page.filtered_posts %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+
+    {% if page.filtered_posts.size == 0 %}
+      {% for post in site.posts %}
+        {% assign post_lang = post.lang | default: 'en' %}
+        {% if post_lang == current_lang %}
+          {% for cat in post.categories %}
+            {% assign cat_slug = cat | slugify %}
+            {% if cat_slug == page.category_slug %}
+              {% include post-card.html post=post %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,46 @@
+---
+layout: post
+title: '"Latour Swag" by Darius Kazemi'
+date: '2013-02-28 15:30:00'
+lang: en
+categories:
+- '2013'
+- bot
+- e-poetry
+- entries
+- generative
+- javascript
+- mutable
+- poetry
+- responsive
+- scheduled
+- serial
+- social
+- twitter
+- uncategorized
+tags:
+- darius-kazemi
+excerpt: 'Open "Latour Swag" by Darius Kazemi This Twitter bot produces a mashup of the “ Bruno Latourbot ” and original tweets that use the #swag hashtag. Kazemi describes the selection algorithm in detail in this excerpt from his blog posting about the creation of this bot. Basically how it works is I get the last...'
+permalink: /en/2013/latour-swag-by-darius-kazemi/
+wp_post_id: 54
+translation: "/es/2013-es/latour-swag-por-darius-kazemi/"
+---
+
+<figure class="wp-caption"><img alt="Screen capture of &quot;Latour Swag&quot; by Darius Kazemi. A picture of the @LatourSwag twitter profile showing its most recent tweets. Text: &quot;@latourbot + #swag: an attempt to approximate @10rdben in bot form. Tweets every 15 minutes. By @tinysubversions. It's another ploy by the Finance Ministry and you too will have swag. #SWAG. Since they are able to interrupt, these people must be tied to new interests and boylieber happy JB! #teambieber #ilovejb #SWAG #MyLife&quot;" height="499" src="http://academic.uprm.edu/flores/images/latourswag.png" width="511"/><figcaption>Open <a href="https://twitter.com/LatourSwag" target="_blank">"Latour Swag" by Darius Kazemi</a></figcaption></figure>
+
+This Twitter bot produces a mashup of the “<a href="/iloveepoetry/en/2013/bruno-latourbot-by-anonymous/" target="_blank">Bruno Latourbot</a>” and original tweets that use the #swag hashtag. Kazemi describes the selection algorithm in detail in this excerpt from <a href="http://tinysubversions.com/2013/01/new-twitter-bot-latourswag/" target="_blank">his blog posting</a> about the creation of this bot.
+<blockquote>Basically how it works is I get <a href="http://search.twitter.com/search.json?callback=?&amp;rpp=100&amp;q=%27%23swag+and%27" target="_blank">the last 100 Twitter search results for “#swag” that also contain the word “and”</a>. Then I grab the last <a href="http://search.twitter.com/search.json?callback=?&amp;rpp=100&amp;q=%27from:latourbot%27" target="_blank">100 tweets from @LatourBot</a>. I take every #swag tweet that’s not an RT and push it to an array. I take every @latourbot tweet that has “and” or “,” in it, and push it to an array. Then I say there’s a 50% chance it will be latour-then-swag, and 50% that it will be swag-then-latour. If Latour comes first, I take a random Latour tweet from the array and take all the text up to the “and” or the “,”. Then I take a random swag tweet and take the text <em>after</em> the “and” in it. Then I do <em>latour + ” and ” + swag</em>. There you go.</blockquote>
+Here’s a link to the <a href="https://github.com/dariusk/latourswag" target="_blank">source code</a>.
+
+The word “swag” itself has a fascinating history— I recommend reading the <a href="http://www.urbandictionary.com/define.php?term=swag" target="_blank">Urban Dictionary entry</a>— and it is probably overused and misunderstood, as evidenced by some <a href="https://twitter.com/search?q=%23swag&amp;src=typd" target="_blank">top tweets using #swag</a>.
+
+<img alt="Screen capture of instance of #swag on Twitter. Text: &quot;Chillin in Mcdonalds play place #swag / who needs brain cells when you have #SWAG / Reppin the Johnson and Sons Rufin today #swag / And to top it off... I'm freezing, i forgot a jacket... I'm wearing a white shirt with bright Nike sports bra #swag&quot;" class="alignnone" height="324" src="http://academic.uprm.edu/flores/images/swaghashtag.png" width="511"/>
+
+I suspect the common usage of the term (and Kazemi’s) refers to personal ornamentation, considering the Twitter profile pictures for both <a href="https://twitter.com/10rdBen" target="_blank">Ben Abraham</a> (for whom this bot was created) and Bruno Latourswag (see below).
+
+<img alt='A picture of Ben Abraham getting the Blingee image altering treatment, complete with the words "Swag" and the phrase "Live UR lies" as well as a crown and gold chain that says "Gangsta."' class="alignnone" height="256" src="http://academic.uprm.edu/flores/images/10rdben.png" width="256"/><img alt="Bruno Latour getting the Blingee treatment, with a crown, chain, and a lit cigarrette photoshopped onto his lips." class="alignnone" height="240" src="http://academic.uprm.edu/flores/images/latourswagprofilepic.png" width="240"/>
+
+What is most interesting about this bot is that it places some of Bruno Latour’s language in conversation with popular statements about swag, however one may define it. This bot generates a tweet-sized line of <a href="http://en.wikipedia.org/wiki/Flarf_poetry" target="_blank">Flarf poetry</a> every 15 minutes, with surprisingly coherent and humorous results.
+
+<strong>Featured in <a href="/iloveepoetry/en/adult/genre-bot/">Genre: Bot</a></strong>
+<a href="http://elmcip.net/node/6955" target="_blank" title="http://elmcip.net/node/6955"><img alt="Read more about this work at ELMCIP." class="alignnone" height="100" src="http://academic.uprm.edu/flores/images/elmcipthumb.png" width="208"/></a>

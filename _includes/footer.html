@@ -1,0 +1,30 @@
+{% assign current_lang = page.lang | default: 'en' %}
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-search">
+      <label for="footerSearchInput" class="sr-only">
+        {% if current_lang == 'es' %}Buscar{% else %}Search{% endif %}
+      </label>
+      <input
+        type="search"
+        id="footerSearchInput"
+        class="search-input"
+        placeholder="{% if current_lang == 'es' %}Buscar entradas...{% else %}Search posts...{% endif %}"
+        autocomplete="off"
+      >
+      <div id="searchResults" class="search-results hidden"></div>
+    </div>
+
+    <div class="footer-info">
+      <p class="footer-copyright">
+        &copy; {{ site.time | date: '%Y' }} I &hearts; E-Poetry.
+        {% if current_lang == 'es' %}
+          Contenido licenciado bajo
+        {% else %}
+          Content licensed under
+        {% endif %}
+        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.
+      </p>
+    </div>
+  </div>
+</footer>

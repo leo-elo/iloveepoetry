@@ -1,0 +1,28 @@
+{% assign current_lang = page.lang | default: 'en' %}
+<article class="post-card">
+  <a href="{{ post.url | relative_url }}" class="post-card-image-link">
+    {% if post.featured_image %}
+      <img src="{{ post.featured_image | relative_url }}" alt="{{ post.title }}" class="post-card-image" loading="lazy">
+    {% else %}
+      <div class="post-card-placeholder">
+        <span class="placeholder-heart">&hearts;</span>
+      </div>
+    {% endif %}
+  </a>
+  <div class="post-card-body">
+    <h2 class="post-card-title">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h2>
+    <time class="post-card-date" datetime="{{ post.date | date_to_xmlschema }}">
+      {% if current_lang == 'es' %}
+        {{ post.date | date: "%d de %B de %Y" }}
+      {% else %}
+        {{ post.date | date: "%B %-d, %Y" }}
+      {% endif %}
+    </time>
+    <p class="post-card-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    <a href="{{ post.url | relative_url }}" class="post-card-read-more">
+      {% if current_lang == 'es' %}Seguir leyendo &rarr;{% else %}Continue reading &rarr;{% endif %}
+    </a>
+  </div>
+</article>
