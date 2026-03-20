@@ -1,11 +1,11 @@
 /* ==========================================================================
-   I Love E-Poetry — Minimal Scholarly Theme
+   I Love E-Poetry — Red & White Theme
    Color Palette:
-     Primary (dark navy): #1D3557
-     Accent (heart red):  #E63946
-     Light accent:        #F1FAEE
+     Primary (red):       #CC0000
+     Accent (dark red):   #990000
      Background:          #FFFFFF
-     Text:                #333333
+     Text:                #000000
+     Light accent:        #FFF0F0
    ========================================================================== */
 
 /* --- Reset & Base --- */
@@ -25,7 +25,7 @@ html {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
-  color: #333;
+  color: #000;
   background: #fff;
   line-height: 1.7;
   display: flex;
@@ -35,19 +35,24 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: #1D3557;
+  color: #000;
   line-height: 1.3;
   margin-bottom: 0.5em;
 }
 
 a {
-  color: #E63946;
+  color: #CC0000;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
+a:visited {
+  color: #CC0000;
+}
+
 a:hover {
-  color: #1D3557;
+  color: #990000;
+  text-decoration: underline;
 }
 
 img {
@@ -82,7 +87,7 @@ img {
    Header
    ========================================================================== */
 .site-header {
-  background: #1D3557;
+  background: #CC0000;
   color: #fff;
   padding: 1rem 0 0;
 }
@@ -109,17 +114,18 @@ img {
 }
 
 .site-title:hover {
-  color: #F1FAEE;
+  color: #fff;
+  text-decoration: none;
 }
 
 .site-title .heart {
-  color: #E63946;
+  color: #fff;
   font-size: 1.2em;
 }
 
 .site-description {
   font-size: 0.85rem;
-  color: #A8DADC;
+  color: rgba(255, 255, 255, 0.8);
   font-style: italic;
   margin: 0;
 }
@@ -145,23 +151,24 @@ img {
   display: inline-block;
   padding: 0.2rem 0.55rem;
   border-radius: 3px;
-  color: #A8DADC;
+  color: rgba(255, 255, 255, 0.7);
   transition: background 0.2s, color 0.2s;
 }
 
 .lang-option:hover {
   color: #fff;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
 }
 
 .lang-option.active {
-  background: #E63946;
-  color: #fff;
+  background: #fff;
+  color: #CC0000;
   border-radius: 3px;
 }
 
 .lang-divider {
-  color: #A8DADC;
+  color: rgba(255, 255, 255, 0.5);
   user-select: none;
 }
 
@@ -189,7 +196,7 @@ img {
 /* --- Navigation --- */
 .site-nav {
   margin-top: 0.75rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .nav-list {
@@ -203,22 +210,23 @@ img {
 .nav-list li a {
   display: block;
   padding: 0.7rem 1rem;
-  color: #F1FAEE;
+  color: #fff;
   font-size: 0.9rem;
   font-weight: 500;
   transition: background 0.2s, color 0.2s;
 }
 
 .nav-list li a:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.15);
   color: #fff;
+  text-decoration: none;
 }
 
 /* ==========================================================================
    Post Header Bar
    ========================================================================== */
 .post-header-bar {
-  background: #E63946;
+  background: #CC0000;
   color: #fff;
   padding: 2rem 0;
   margin-bottom: 2rem;
@@ -275,17 +283,17 @@ img {
 }
 
 .post-content blockquote {
-  border-left: 4px solid #E63946;
+  border-left: 4px solid #CC0000;
   margin: 1.5em 0;
   padding: 0.75em 1.25em;
-  background: #F1FAEE;
+  background: #FFF0F0;
   font-style: italic;
-  color: #555;
+  color: #333;
 }
 
 .post-content pre {
-  background: #1D3557;
-  color: #F1FAEE;
+  background: #333;
+  color: #fff;
   padding: 1rem 1.25rem;
   border-radius: 4px;
   overflow-x: auto;
@@ -300,23 +308,78 @@ img {
   border-radius: 4px;
 }
 
+/* --- Read This Work Button --- */
+.read-work-btn-wrap {
+  max-width: 780px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.read-work-btn {
+  display: inline-block;
+  padding: 0.85rem 2.5rem;
+  background: #CC0000;
+  color: #fff !important;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  text-decoration: none !important;
+  letter-spacing: 0.02em;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.read-work-btn:visited {
+  color: #fff !important;
+}
+
+.read-work-btn:hover {
+  background: #990000;
+  color: #fff !important;
+  transform: translateY(-2px);
+  text-decoration: none !important;
+}
+
+/* --- ELMCIP Link --- */
+.elmcip-link-wrap {
+  max-width: 780px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.elmcip-link-wrap a {
+  display: inline-block;
+  transition: opacity 0.2s;
+}
+
+.elmcip-link-wrap a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.elmcip-link-wrap img {
+  max-height: 60px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 /* --- Translation Link --- */
 .post-translation {
   max-width: 780px;
   margin: 2rem auto;
   padding: 1rem;
-  background: #F1FAEE;
-  border-left: 4px solid #1D3557;
+  background: #FFF0F0;
+  border-left: 4px solid #CC0000;
   border-radius: 0 4px 4px 0;
 }
 
 .translation-link {
   font-weight: 600;
-  color: #1D3557;
+  color: #CC0000;
 }
 
 .translation-link:hover {
-  color: #E63946;
+  color: #990000;
 }
 
 /* --- Categories --- */
@@ -324,7 +387,7 @@ img {
   max-width: 780px;
   margin: 2.5rem auto 0;
   padding-top: 1.5rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #ddd;
 }
 
 .post-categories h3 {
@@ -345,8 +408,8 @@ img {
 .category-list li a {
   display: inline-block;
   padding: 0.3rem 0.75rem;
-  background: #F1FAEE;
-  color: #1D3557;
+  background: #FFF0F0;
+  color: #CC0000;
   border-radius: 3px;
   font-size: 0.85rem;
   font-weight: 500;
@@ -354,8 +417,9 @@ img {
 }
 
 .category-list li a:hover {
-  background: #E63946;
+  background: #CC0000;
   color: #fff;
+  text-decoration: none;
 }
 
 /* ==========================================================================
@@ -370,7 +434,7 @@ img {
   margin: 0 auto 1.5rem;
   font-size: 2rem;
   padding-bottom: 0.75rem;
-  border-bottom: 3px solid #E63946;
+  border-bottom: 3px solid #CC0000;
 }
 
 .page-body {
@@ -402,7 +466,7 @@ img {
    ========================================================================== */
 .post-card {
   background: #fff;
-  border: 1px solid #eee;
+  border: 1px solid #ddd;
   border-radius: 6px;
   overflow: hidden;
   transition: box-shadow 0.25s ease, transform 0.25s ease;
@@ -427,7 +491,7 @@ img {
 .post-card-placeholder {
   width: 100%;
   height: 200px;
-  background: linear-gradient(135deg, #1D3557 0%, #457B9D 100%);
+  background: linear-gradient(135deg, #CC0000 0%, #FF4444 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -435,7 +499,7 @@ img {
 
 .placeholder-heart {
   font-size: 3rem;
-  color: #E63946;
+  color: #fff;
   opacity: 0.8;
 }
 
@@ -449,11 +513,11 @@ img {
 }
 
 .post-card-title a {
-  color: #1D3557;
+  color: #000;
 }
 
 .post-card-title a:hover {
-  color: #E63946;
+  color: #CC0000;
 }
 
 .post-card-date {
@@ -465,7 +529,7 @@ img {
 
 .post-card-excerpt {
   font-size: 0.9rem;
-  color: #555;
+  color: #333;
   margin-bottom: 0.75rem;
   line-height: 1.6;
 }
@@ -473,11 +537,11 @@ img {
 .post-card-read-more {
   font-size: 0.85rem;
   font-weight: 600;
-  color: #E63946;
+  color: #CC0000;
 }
 
 .post-card-read-more:hover {
-  color: #1D3557;
+  color: #990000;
 }
 
 /* ==========================================================================
@@ -494,7 +558,7 @@ img {
 .category-title {
   font-size: 1.75rem;
   padding-bottom: 0.5rem;
-  border-bottom: 3px solid #E63946;
+  border-bottom: 3px solid #CC0000;
 }
 
 /* ==========================================================================
@@ -503,7 +567,7 @@ img {
 .pagination {
   margin-top: 2.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #ddd;
   text-align: center;
 }
 
@@ -517,14 +581,15 @@ img {
 }
 
 .pagination a {
-  background: #F1FAEE;
-  color: #1D3557;
+  background: #FFF0F0;
+  color: #CC0000;
   font-weight: 500;
 }
 
 .pagination a:hover {
-  background: #E63946;
+  background: #CC0000;
   color: #fff;
+  text-decoration: none;
 }
 
 .pagination-info {
@@ -536,7 +601,7 @@ img {
    Footer
    ========================================================================== */
 .site-footer {
-  background: #1D3557;
+  background: #CC0000;
   color: #fff;
   padding: 2rem 0;
   margin-top: auto;
@@ -559,9 +624,9 @@ img {
 .search-input {
   width: 100%;
   padding: 0.7rem 1rem;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 6px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.15);
   color: #fff;
   font-size: 0.9rem;
   outline: none;
@@ -569,12 +634,12 @@ img {
 }
 
 .search-input::placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .search-input:focus {
-  border-color: #E63946;
-  background: rgba(255, 255, 255, 0.15);
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.25);
 }
 
 /* --- Search Results --- */
@@ -584,7 +649,7 @@ img {
   left: 0;
   right: 0;
   background: #fff;
-  color: #333;
+  color: #000;
   border-radius: 6px;
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
   max-height: 400px;
@@ -609,19 +674,19 @@ img {
 }
 
 .search-result-item:hover {
-  background: #F1FAEE;
+  background: #FFF0F0;
 }
 
 .search-result-title {
   font-weight: 600;
-  color: #1D3557;
+  color: #000;
   font-size: 0.9rem;
   margin-bottom: 0.15rem;
 }
 
 .search-result-excerpt {
   font-size: 0.8rem;
-  color: #888;
+  color: #666;
   line-height: 1.4;
 }
 
@@ -641,7 +706,7 @@ img {
 /* --- Footer Info --- */
 .footer-copyright {
   font-size: 0.85rem;
-  color: #A8DADC;
+  color: rgba(255, 255, 255, 0.8);
   margin: 0;
 }
 
@@ -652,7 +717,7 @@ img {
 }
 
 .footer-copyright a:hover {
-  color: #E63946;
+  color: #fff;
 }
 
 /* ==========================================================================
@@ -670,7 +735,7 @@ img {
 
 .wp-caption-text {
   font-size: 0.85rem;
-  color: #888;
+  color: #666;
   font-style: italic;
   margin-top: 0.5em;
   text-align: center;
@@ -703,7 +768,7 @@ img {
 
 .wp-block-image figcaption {
   font-size: 0.85rem;
-  color: #888;
+  color: #666;
   font-style: italic;
   margin-top: 0.5em;
   text-align: center;
@@ -718,7 +783,7 @@ img {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #1D3557;
+  background: #CC0000;
   color: #fff;
   text-align: center;
   padding: 2rem;
@@ -732,13 +797,13 @@ img {
 }
 
 .landing-title .heart {
-  color: #E63946;
+  color: #fff;
   font-size: 1.1em;
 }
 
 .landing-subtitle {
   font-size: 1.1rem;
-  color: #A8DADC;
+  color: rgba(255, 255, 255, 0.8);
   font-style: italic;
   margin-bottom: 2.5rem;
 }
@@ -760,26 +825,28 @@ img {
 
 .landing-btn:hover {
   transform: translateY(-2px);
+  text-decoration: none;
 }
 
 .landing-btn-en {
-  background: #E63946;
-  color: #fff;
+  background: #fff;
+  color: #CC0000;
 }
 
 .landing-btn-en:hover {
-  background: #cf2f3c;
-  color: #fff;
+  background: #FFF0F0;
+  color: #CC0000;
 }
 
 .landing-btn-es {
-  background: #fff;
-  color: #1D3557;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 2px solid #fff;
 }
 
 .landing-btn-es:hover {
-  background: #F1FAEE;
-  color: #1D3557;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
 }
 
 /* ==========================================================================
@@ -794,7 +861,7 @@ img {
     display: none;
     margin-top: 0;
     border-top: none;
-    background: #162b47;
+    background: #AA0000;
   }
 
   .site-nav.open {
@@ -807,7 +874,7 @@ img {
 
   .nav-list li a {
     padding: 0.8rem 1.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .header-inner {

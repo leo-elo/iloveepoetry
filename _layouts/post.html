@@ -27,6 +27,24 @@ layout: default
       {{ content }}
     </div>
 
+    {% if page.work_url %}
+    <div class="read-work-btn-wrap">
+      {% if page.lang == 'es' %}
+        <a href="{{ page.work_url }}" class="read-work-btn" target="_blank" rel="noopener">Leer esta obra</a>
+      {% else %}
+        <a href="{{ page.work_url }}" class="read-work-btn" target="_blank" rel="noopener">Read this work</a>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    {% if page.elmcip_url %}
+    <div class="elmcip-link-wrap">
+      <a href="{{ page.elmcip_url }}" target="_blank" rel="noopener">
+        <img src="{{ '/assets/images/uprm/elmcipthumb.png' | relative_url }}" alt="ELMCIP Knowledge Base" loading="lazy">
+      </a>
+    </div>
+    {% endif %}
+
     {% if page.translation %}
     <div class="post-translation">
       {% if page.lang == 'es' %}
