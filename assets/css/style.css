@@ -243,18 +243,21 @@ img {
 }
 
 .post-featured-image {
-  margin-bottom: 2rem;
+  max-width: 400px;
+  margin: 0 auto 2rem;
   border-radius: 4px;
   overflow: hidden;
 }
 
 .post-featured-image img {
   width: 100%;
+  height: auto;
   display: block;
 }
 
 .post-content {
   max-width: 780px;
+  margin: 0 auto;
   font-size: 1.05rem;
   line-height: 1.8;
 }
@@ -299,7 +302,8 @@ img {
 
 /* --- Translation Link --- */
 .post-translation {
-  margin: 2rem 0;
+  max-width: 780px;
+  margin: 2rem auto;
   padding: 1rem;
   background: #F1FAEE;
   border-left: 4px solid #1D3557;
@@ -317,7 +321,8 @@ img {
 
 /* --- Categories --- */
 .post-categories {
-  margin-top: 2.5rem;
+  max-width: 780px;
+  margin: 2.5rem auto 0;
   padding-top: 1.5rem;
   border-top: 1px solid #eee;
 }
@@ -361,14 +366,16 @@ img {
 }
 
 .page-title {
+  max-width: 780px;
+  margin: 0 auto 1.5rem;
   font-size: 2rem;
-  margin-bottom: 1.5rem;
   padding-bottom: 0.75rem;
   border-bottom: 3px solid #E63946;
 }
 
 .page-body {
   max-width: 780px;
+  margin: 0 auto;
   font-size: 1.05rem;
   line-height: 1.8;
 }
@@ -653,7 +660,7 @@ img {
    ========================================================================== */
 .wp-caption {
   max-width: 100%;
-  margin: 1.5em 0;
+  margin: 1.5em auto;
 }
 
 .wp-caption img {
