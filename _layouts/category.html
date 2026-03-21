@@ -18,7 +18,7 @@ layout: default
         {% assign post_lang = post.lang | default: 'en' %}
         {% if post_lang == current_lang %}
           {% for cat in post.categories %}
-            {% assign cat_slug = cat | slugify %}
+            {% assign cat_slug = cat | append: "" | slugify %}
             {% if cat_slug == page.category_slug %}
               {% include post-card.html post=post %}
             {% endif %}

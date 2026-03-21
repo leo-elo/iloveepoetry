@@ -27,8 +27,9 @@ module Jekyll
 
       site.posts.docs.each do |post|
         post.data['categories'].each do |cat|
-          slug = Utils.slugify(cat)
-          categories[slug] ||= { name: cat, slug: slug }
+          cat_str = cat.to_s
+          slug = Utils.slugify(cat_str)
+          categories[slug] ||= { name: cat_str, slug: slug }
         end
       end
 
@@ -38,7 +39,7 @@ module Jekyll
           # Filter posts by language and category
           filtered = site.posts.docs.select do |post|
             post_lang = post.data['lang'] || 'en'
-            post_cats = (post.data['categories'] || []).map { |c| Utils.slugify(c) }
+            post_cats = (post.data['categories'] || []).map { |c| Utils.slugify(c.to_s) }
             post_lang == lang && post_cats.include?(cat_info[:slug])
           end
 

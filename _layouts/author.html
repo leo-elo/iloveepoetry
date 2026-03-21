@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="container category-page">
+  <header class="category-header">
+    {% if page.lang == 'es' %}
+      <h1 class="category-title">Publicaciones por {{ page.author_name }}</h1>
+    {% else %}
+      <h1 class="category-title">Posts by {{ page.author_name }}</h1>
+    {% endif %}
+  </header>
+
+  <div class="posts-grid">
+    {% for post in page.filtered_posts %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+
+    {% if page.filtered_posts.size == 0 %}
+      {% if page.lang == 'es' %}
+        <p>No se encontraron publicaciones.</p>
+      {% else %}
+        <p>No posts found.</p>
+      {% endif %}
+    {% endif %}
+  </div>
+</div>

@@ -37,14 +37,24 @@ layout: default
     </div>
     {% endif %}
 
-    {% if page.categories.size > 0 or page.tags.size > 0 %}
+    {% if page.author or page.categories.size > 0 or page.tags.size > 0 %}
     <div class="post-metadata-box">
+      {% if page.author %}
+      <div class="metadata-section">
+        {% assign author_slug = page.author | slugify %}
+        <span class="metadata-label">{% if page.lang == 'es' %}Escrito por{% else %}Written by{% endif %}:</span>
+        <span class="metadata-values">
+          <a href="{{ '/' | append: page.lang | append: '/author/' | append: author_slug | append: '.html' | relative_url }}">{{ page.author }}</a>
+        </span>
+      </div>
+      {% endif %}
       {% if page.categories.size > 0 %}
       <div class="metadata-section">
         <span class="metadata-label">{% if page.lang == 'es' %}Categorías{% else %}Categories{% endif %}:</span>
         <span class="metadata-values">
           {% for cat in page.categories %}
-            {% assign cat_slug = cat | slugify %}
+            {% assign cat_str = cat | append: "" %}
+            {% assign cat_slug = cat_str | slugify %}
             {% if page.lang == 'es' %}
               <a href="{{ '/es/category/' | append: cat_slug | append: '.html' | relative_url }}">{{ cat }}</a>{% unless forloop.last %}, {% endunless %}
             {% else %}
