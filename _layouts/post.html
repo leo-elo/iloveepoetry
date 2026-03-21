@@ -31,21 +31,19 @@ layout: default
     <div class="post-actions-row">
       {% if page.work_url %}
         {% if page.lang == 'es' %}
-          <a href="{{ page.work_url }}" class="read-work-btn" target="_blank" rel="noopener">Leer esta obra</a>
+          <a href="{{ page.work_url }}" class="post-action-btn" target="_blank" rel="noopener">Leer esta obra</a>
         {% else %}
-          <a href="{{ page.work_url }}" class="read-work-btn" target="_blank" rel="noopener">Read this work</a>
+          <a href="{{ page.work_url }}" class="post-action-btn" target="_blank" rel="noopener">Read this work</a>
         {% endif %}
       {% endif %}
       {% if page.elmcip_url %}
-        <a href="{{ page.elmcip_url }}" class="elmcip-link" target="_blank" rel="noopener">
-          <img src="{{ '/assets/images/uprm/elmcipthumb.png' | relative_url }}" alt="image of the ELMCIP logo with link to an entry on the piece in the ELMCIP Knowledge Base" loading="lazy">
-        </a>
+        <a href="{{ page.elmcip_url }}" class="post-action-btn" target="_blank" rel="noopener">ELMCIP</a>
       {% endif %}
       {% if page.translation %}
         {% if page.lang == 'es' %}
-          <a href="{{ page.translation | relative_url }}" class="translation-btn">Read in English</a>
+          <a href="{{ page.translation | relative_url }}" class="post-action-btn">Read in English</a>
         {% else %}
-          <a href="{{ page.translation | relative_url }}" class="translation-btn">Leer en Español</a>
+          <a href="{{ page.translation | relative_url }}" class="post-action-btn">Leer en Español</a>
         {% endif %}
       {% endif %}
     </div>

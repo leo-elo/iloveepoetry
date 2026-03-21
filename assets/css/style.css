@@ -313,18 +313,19 @@ img {
   border-radius: 4px;
 }
 
-/* --- Post Actions Row (buttons + ELMCIP) --- */
+/* --- Post Actions Row --- */
 .post-actions-row {
   max-width: 780px;
   margin: 2rem auto;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+  text-align: center;
 }
 
-.read-work-btn {
+.post-action-btn {
   display: inline-block;
   padding: 0.85rem 2.5rem;
   background: #D9342A;
@@ -337,52 +338,12 @@ img {
   transition: background 0.2s, transform 0.15s;
 }
 
-.read-work-btn:visited {
+.post-action-btn:visited {
   color: #fff !important;
 }
 
-.read-work-btn:hover {
-  background: #D9342A;
-  color: #fff !important;
-  transform: translateY(-2px);
-  text-decoration: none !important;
-}
-
-.elmcip-link {
-  display: inline-block;
-  transition: opacity 0.2s;
-}
-
-.elmcip-link:hover {
-  opacity: 0.8;
-  text-decoration: none;
-}
-
-.elmcip-link img {
-  max-height: 50px;
-  width: auto;
-  display: block;
-}
-
-.translation-btn {
-  display: inline-block;
-  padding: 0.85rem 2.5rem;
-  background: #D9342A;
-  color: #fff !important;
-  font-size: 1.1rem;
-  font-weight: 700;
-  border-radius: 6px;
-  text-decoration: none !important;
-  letter-spacing: 0.02em;
-  transition: background 0.2s, transform 0.15s;
-}
-
-.translation-btn:visited {
-  color: #fff !important;
-}
-
-.translation-btn:hover {
-  background: #D9342A;
+.post-action-btn:hover {
+  background: #b82b22;
   color: #fff !important;
   transform: translateY(-2px);
   text-decoration: none !important;
