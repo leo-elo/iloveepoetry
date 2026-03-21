@@ -313,11 +313,15 @@ img {
   border-radius: 4px;
 }
 
-/* --- Read This Work Button --- */
-.read-work-btn-wrap {
+/* --- Post Actions Row (buttons + ELMCIP) --- */
+.post-actions-row {
   max-width: 780px;
   margin: 2rem auto;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .read-work-btn {
@@ -338,6 +342,46 @@ img {
 }
 
 .read-work-btn:hover {
+  background: #D9342A;
+  color: #fff !important;
+  transform: translateY(-2px);
+  text-decoration: none !important;
+}
+
+.elmcip-link {
+  display: inline-block;
+  transition: opacity 0.2s;
+}
+
+.elmcip-link:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.elmcip-link img {
+  max-height: 50px;
+  width: auto;
+  display: block;
+}
+
+.translation-btn {
+  display: inline-block;
+  padding: 0.85rem 2.5rem;
+  background: #D9342A;
+  color: #fff !important;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  text-decoration: none !important;
+  letter-spacing: 0.02em;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.translation-btn:visited {
+  color: #fff !important;
+}
+
+.translation-btn:hover {
   background: #D9342A;
   color: #fff !important;
   transform: translateY(-2px);
@@ -385,49 +429,7 @@ img {
   font-weight: 400;
 }
 
-/* --- ELMCIP Link --- */
-.elmcip-link-wrap {
-  max-width: 780px;
-  margin: 2rem auto;
-  text-align: center;
-}
-
-.elmcip-link-wrap a {
-  display: inline-block;
-  transition: opacity 0.2s;
-}
-
-.elmcip-link-wrap a:hover {
-  opacity: 0.8;
-  text-decoration: none;
-}
-
-.elmcip-link-wrap img {
-  max-height: 60px;
-  width: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-/* --- Translation Link --- */
-.post-translation {
-  max-width: 780px;
-  margin: 2rem auto;
-  padding: 1rem;
-  background: #FFF0F0;
-  border-left: 4px solid #D9342A;
-  border-radius: 0 4px 4px 0;
-}
-
-.translation-link,
-.translation-link:visited {
-  font-weight: 600;
-  color: #D9342A;
-}
-
-.translation-link:hover {
-  color: #D9342A;
-}
+/* (Old ELMCIP and Translation styles removed — now in .post-actions-row) */
 
 /* --- Categories --- */
 .post-categories {

@@ -27,12 +27,26 @@ layout: default
       {{ content }}
     </div>
 
-    {% if page.work_url %}
-    <div class="read-work-btn-wrap">
-      {% if page.lang == 'es' %}
-        <a href="{{ page.work_url }}" class="read-work-btn" target="_blank" rel="noopener">Leer esta obra</a>
-      {% else %}
-        <a href="{{ page.work_url }}" class="read-work-btn" target="_blank" rel="noopener">Read this work</a>
+    {% if page.work_url or page.elmcip_url or page.translation %}
+    <div class="post-actions-row">
+      {% if page.work_url %}
+        {% if page.lang == 'es' %}
+          <a href="{{ page.work_url }}" class="read-work-btn" target="_blank" rel="noopener">Leer esta obra</a>
+        {% else %}
+          <a href="{{ page.work_url }}" class="read-work-btn" target="_blank" rel="noopener">Read this work</a>
+        {% endif %}
+      {% endif %}
+      {% if page.elmcip_url %}
+        <a href="{{ page.elmcip_url }}" class="elmcip-link" target="_blank" rel="noopener">
+          <img src="{{ '/assets/images/uprm/elmcipthumb.png' | relative_url }}" alt="image of the ELMCIP logo with link to an entry on the piece in the ELMCIP Knowledge Base" loading="lazy">
+        </a>
+      {% endif %}
+      {% if page.translation %}
+        {% if page.lang == 'es' %}
+          <a href="{{ page.translation | relative_url }}" class="translation-btn">Read in English</a>
+        {% else %}
+          <a href="{{ page.translation | relative_url }}" class="translation-btn">Leer en Español</a>
+        {% endif %}
       {% endif %}
     </div>
     {% endif %}
@@ -73,24 +87,6 @@ layout: default
           {% endfor %}
         </span>
       </div>
-      {% endif %}
-    </div>
-    {% endif %}
-
-    {% if page.elmcip_url %}
-    <div class="elmcip-link-wrap">
-      <a href="{{ page.elmcip_url }}" target="_blank" rel="noopener">
-        <img src="{{ '/assets/images/uprm/elmcipthumb.png' | relative_url }}" alt="ELMCIP Knowledge Base" loading="lazy">
-      </a>
-    </div>
-    {% endif %}
-
-    {% if page.translation %}
-    <div class="post-translation">
-      {% if page.lang == 'es' %}
-        <a href="{{ page.translation | relative_url }}" class="translation-link">Read in English</a>
-      {% else %}
-        <a href="{{ page.translation | relative_url }}" class="translation-link">Leer en Español</a>
       {% endif %}
     </div>
     {% endif %}
