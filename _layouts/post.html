@@ -42,7 +42,7 @@ layout: default
       {% if page.author %}
       <div class="metadata-section">
         {% assign author_slug = page.author | slugify %}
-        <span class="metadata-label">{% if page.lang == 'es' %}Escrito por{% else %}Written by{% endif %}:</span>
+        <span class="metadata-label">{% if page.lang == 'es' %}Entrada por{% else %}Entry by{% endif %}:</span>
         <span class="metadata-values">
           <a href="{{ '/' | append: page.lang | append: '/author/' | append: author_slug | append: '.html' | relative_url }}">{{ page.author }}</a>
         </span>
@@ -66,7 +66,7 @@ layout: default
       {% endif %}
       {% if page.tags.size > 0 %}
       <div class="metadata-section">
-        <span class="metadata-label">{% if page.lang == 'es' %}Etiquetas{% else %}Tags{% endif %}:</span>
+        <span class="metadata-label">{% if page.lang == 'es' %}Autor(es){% else %}Author(s){% endif %}:</span>
         <span class="metadata-values">
           {% for tag in page.tags %}
             {{ tag }}{% unless forloop.last %}, {% endunless %}
