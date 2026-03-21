@@ -344,6 +344,47 @@ img {
   text-decoration: none !important;
 }
 
+/* --- Post Metadata Box --- */
+.post-metadata-box {
+  max-width: 780px;
+  margin: 2rem auto;
+  background: #D9342A;
+  color: #fff;
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+}
+
+.post-metadata-box a,
+.post-metadata-box a:visited,
+.post-metadata-box a:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.post-metadata-box a:hover {
+  opacity: 0.85;
+}
+
+.metadata-section {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+  font-size: 0.92rem;
+}
+
+.metadata-section:last-child {
+  margin-bottom: 0;
+}
+
+.metadata-label {
+  font-weight: 700;
+  margin-right: 0.3rem;
+}
+
+.metadata-values {
+  font-weight: 400;
+}
+
 /* --- ELMCIP Link --- */
 .elmcip-link-wrap {
   max-width: 780px;
