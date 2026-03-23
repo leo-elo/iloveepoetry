@@ -1,0 +1,1617 @@
+{
+  "generated_at": "2026-03-22T07:07:12.094971",
+  "dry_run": false,
+  "summary": {
+    "new_files_created": 89,
+    "en_to_es_files": 68,
+    "es_to_en_files": 21,
+    "bidirectional_links_added": 141,
+    "total_words_needing_translation": 24744
+  },
+  "files_created": [
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-18-internet-text-1994-through-feb-2-2006-by-alan.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-18-internet-text-1994-through-feb-2-2006-por-alan.html",
+      "direction": "en->es",
+      "en_permalink": "/en/1994/internet-text-1994-through-feb-2-2006-by-alan/",
+      "es_permalink": "/es/1994-es/internet-text-1994-through-feb-2-2006-por-alan/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-03-13-the-click-poems-by-david-knoebel.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-03-13-the-click-poems-por-david-knoebel.html",
+      "direction": "en->es",
+      "en_permalink": "/en/1997/the-click-poems-by-david-knoebel/",
+      "es_permalink": "/es/1997-es/the-click-poems-por-david-knoebel/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-04-rice-by-geniwate.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-04-rice-por-geniwate.html",
+      "direction": "en->es",
+      "en_permalink": "/en/1998/rice-by-geniwate/",
+      "es_permalink": "/es/1998-es/rice-por-geniwate/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-08-31-gabriella-infinita-by-jaime-alejandro-rodriguez.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-08-31-gabriella-infinita-por-jaime-alejandro-rodriguez.html",
+      "direction": "en->es",
+      "en_permalink": "/en/1999/gabriella-infinita-by-jaime-alejandro-rodriguez/",
+      "es_permalink": "/es/1999-es/gabriella-infinita-por-jaime-alejandro-rodriguez/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-25-strings-by-dan-waber.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-25-strings-por-dan-waber.html",
+      "direction": "en->es",
+      "en_permalink": "/en/1999/strings-by-dan-waber/",
+      "es_permalink": "/es/1999-es/strings-por-dan-waber/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-05-white-faced-bromeliads-on-20-hectares-by-loss-peque-o.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-05-white-faced-bromeliads-on-20-hectares-por-loss-peque-o.html",
+      "direction": "en->es",
+      "en_permalink": "/en/1999/white-faced-bromeliads-on-20-hectares-by-loss-peque-o/",
+      "es_permalink": "/es/1999-es/white-faced-bromeliads-on-20-hectares-por-loss-peque-o/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-06-jabber-by-neil-hennessy.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-06-jabber-por-neil-hennessy.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2000/jabber-by-neil-hennessy/",
+      "es_permalink": "/es/2000-es/jabber-por-neil-hennessy/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-03-14-thoughts-go-by-david-knoebel.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-03-14-thoughts-go-por-david-knoebel.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2001/thoughts-go-by-david-knoebel/",
+      "es_permalink": "/es/2001-es/thoughts-go-por-david-knoebel/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2011-12-30-accounts-of-the-glass-sky-by-m-d-coverley.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2011-12-30-accounts-of-the-glass-sky-por-m-d-coverley.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2002/accounts-of-the-glass-sky-by-m-d-coverley/",
+      "es_permalink": "/es/2002-es/accounts-of-the-glass-sky-por-m-d-coverley/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-06-soliloquy-by-kenneth-goldsmith.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-06-soliloquy-por-kenneth-goldsmith.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2002/soliloquy-by-kenneth-goldsmith/",
+      "es_permalink": "/es/2002-es/soliloquy-por-kenneth-goldsmith/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2011-12-29-wotclock-by-john-cayley.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2011-12-29-wotclock-por-john-cayley.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2002/wotclock-by-john-cayley/",
+      "es_permalink": "/es/2002-es/wotclock-por-john-cayley/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-19-dreamaphage-versions-1-and-2-by-jason-nelson.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-19-dreamaphage-versions-1-and-2-por-jason-nelson.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2003/dreamaphage-versions-1-and-2-by-jason-nelson/",
+      "es_permalink": "/es/2003-es/dreamaphage-versions-1-and-2-por-jason-nelson/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-27-separation-s-paration-by-annie-abrahams.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-27-separation-s-paration-por-annie-abrahams.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2003/separation-s-paration-by-annie-abrahams/",
+      "es_permalink": "/es/2003-es/separation-s-paration-por-annie-abrahams/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-07-13-eveline-fragmentos-de-una-respuesta-by-marina-zerbarini.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-07-13-eveline-fragmentos-de-una-respuesta-por-marina-zerbarini.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2004/eveline-fragmentos-de-una-respuesta-by-marina-zerbarini/",
+      "es_permalink": "/es/2004-es/eveline-fragmentos-de-una-respuesta-por-marina-zerbarini/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-22-ii-in-the-white-darkness-about-the-fragility-of.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-22-ii-in-the-white-darkness-about-the-fragility-of.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2004/ii-in-the-white-darkness-about-the-fragility-of/",
+      "es_permalink": "/es/2004-es/ii-in-the-white-darkness-about-the-fragility-of/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-07-open-ended-by-daniel-c-howe-and-aya-karpinska.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-07-open-ended-por-daniel-c-howe-y-aya-karpinska.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2004/open-ended-by-daniel-c-howe-and-aya-karpinska/",
+      "es_permalink": "/es/2004-es/open-ended-por-daniel-c-howe-y-aya-karpinska/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-15-oulipoems-by-millie-niss-with-martha-deed.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-15-oulipoems-por-millie-niss-with-martha-deed.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2004/oulipoems-by-millie-niss-with-martha-deed/",
+      "es_permalink": "/es/2004-es/oulipoems-por-millie-niss-with-martha-deed/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-24-tao-by-reiner-strasser-and-alan-sondheim.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-24-tao-por-reiner-strasser-y-alan-sondheim.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2004/tao-by-reiner-strasser-and-alan-sondheim/",
+      "es_permalink": "/es/2004-es/tao-por-reiner-strasser-y-alan-sondheim/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2011-12-27-translation-by-john-cayley.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2011-12-27-translation-por-john-cayley.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2004/translation-by-john-cayley/",
+      "es_permalink": "/es/2004-es/translation-por-john-cayley/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-23-dawn-by-reiner-strasser-and-alan-sondheim.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-23-dawn-por-reiner-strasser-y-alan-sondheim.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2005/dawn-by-reiner-strasser-and-alan-sondheim/",
+      "es_permalink": "/es/2005-es/dawn-por-reiner-strasser-y-alan-sondheim/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-17-diagrams-series-6-6-4-and-6-10-by-jim-rosenberg.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-17-diagrams-series-6-6-4-and-6-10-por-jim-rosenberg.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2005/diagrams-series-6-6-4-and-6-10-by-jim-rosenberg/",
+      "es_permalink": "/es/2005-es/diagrams-series-6-6-4-and-6-10-por-jim-rosenberg/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-03-generative-poetry-by-geniwate.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-03-generative-poetry-por-geniwate.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2005/generative-poetry-by-geniwate/",
+      "es_permalink": "/es/2005-es/generative-poetry-por-geniwate/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-26-i-you-we-by-dan-waber-and-jason-pimble.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-26-i-you-we-por-dan-waber-y-jason-pimble.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2005/i-you-we-by-dan-waber-and-jason-pimble/",
+      "es_permalink": "/es/2005-es/i-you-we-por-dan-waber-y-jason-pimble/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-14-link-to-poems-note-root-soul-and-snow.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-14-link-to-poems-note-root-soul-and-snow.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2005/link-to-poems-note-root-soul-and-snow/",
+      "es_permalink": "/es/2005-es/link-to-poems-note-root-soul-and-snow/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-13-link-to-poems-note-weeds-and-body-are-part.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-13-link-to-poems-note-weeds-and-body-are-part.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2005/link-to-poems-note-weeds-and-body-are-part/",
+      "es_permalink": "/es/2005-es/link-to-poems-note-weeds-and-body-are-part/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-16-project-for-tachistoscope-bottomless-pit-by-william.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-16-project-for-tachistoscope-bottomless-pit-por-william.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2005/project-for-tachistoscope-bottomless-pit-by-william/",
+      "es_permalink": "/es/2005-es/project-for-tachistoscope-bottomless-pit-por-william/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-13-sooth-by-david-jhave-johnston.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-13-sooth-por-david-jhave-johnston.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2005/sooth-by-david-jhave-johnston/",
+      "es_permalink": "/es/2005-es/sooth-por-david-jhave-johnston/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-20-star-wars-one-letter-at-a-time-by-brian-kim-stefans.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-20-star-wars-one-letter-at-a-time-por-brian-kim-stefans.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2005/star-wars-one-letter-at-a-time-by-brian-kim-stefans/",
+      "es_permalink": "/es/2005-es/star-wars-one-letter-at-a-time-por-brian-kim-stefans/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-25-still-standing-by-bruno-nadeau-and-jason-edward-lewis.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-25-still-standing-por-bruno-nadeau-y-jason-edward-lewis.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2005/still-standing-by-bruno-nadeau-and-jason-edward-lewis/",
+      "es_permalink": "/es/2005-es/still-standing-por-bruno-nadeau-y-jason-edward-lewis/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-27-this-is-how-you-will-die-by-jason-nelson.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-27-this-is-how-you-will-die-por-jason-nelson.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2005/this-is-how-you-will-die-by-jason-nelson/",
+      "es_permalink": "/es/2005-es/this-is-how-you-will-die-por-jason-nelson/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-11-18-all-the-news-thats-fit-to-print-by-jody-zellen.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-11-18-all-the-news-thats-fit-to-print-por-jody-zellen.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2006/all-the-news-thats-fit-to-print-by-jody-zellen/",
+      "es_permalink": "/es/2006-es/all-the-news-thats-fit-to-print-por-jody-zellen/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-01-chemical-landscapes-digital-tales-by-edward-falco.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-01-chemical-landscapes-digital-tales-por-edward-falco.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2006/chemical-landscapes-digital-tales-by-edward-falco/",
+      "es_permalink": "/es/2006-es/chemical-landscapes-digital-tales-por-edward-falco/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-08-family-tree-by-rosalie-hirs-and-harm-van-den-dorpel.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-08-family-tree-por-rosalie-hirs-y-harm-van-den-dorpel.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2006/family-tree-by-rosalie-hirs-and-harm-van-den-dorpel/",
+      "es_permalink": "/es/2006-es/family-tree-por-rosalie-hirs-y-harm-van-den-dorpel/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-21-palavrador-by-chico-marinho.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-21-palavrador-por-chico-marinho.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2006/palavrador-by-chico-marinho/",
+      "es_permalink": "/es/2006-es/palavrador-por-chico-marinho/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-30-the-mandrake-vehicles-by-oni-buchanan.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-30-the-mandrake-vehicles-por-oni-buchanan.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2006/the-mandrake-vehicles-by-oni-buchanan/",
+      "es_permalink": "/es/2006-es/the-mandrake-vehicles-por-oni-buchanan/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-02-thehouse-by-mary-flanagan-this-is-a-challenging.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-02-thehouse-por-mary-flanagan-this-is-a-challenging.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2006/thehouse-by-mary-flanagan-this-is-a-challenging/",
+      "es_permalink": "/es/2006-es/thehouse-por-mary-flanagan-this-is-a-challenging/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2013-01-27-a-dialogue-between-two-eyeballs-by-braxton-soderman.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2013-01-27-a-dialogue-between-two-eyeballs-por-braxton-soderman.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2007/a-dialogue-between-two-eyeballs-by-braxton-soderman/",
+      "es_permalink": "/es/2007-es/a-dialogue-between-two-eyeballs-por-braxton-soderman/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-24-the-last-performance-by-judd-morrissey.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-24-the-last-performance-por-judd-morrissey.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2007/the-last-performance-by-judd-morrissey/",
+      "es_permalink": "/es/2007-es/the-last-performance-por-judd-morrissey/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-07-universo-mol-cula-by-isa-as-herrero.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-07-universo-mol-cula-por-isa-as-herrero.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2007/universo-mol-cula-by-isa-as-herrero/",
+      "es_permalink": "/es/2007-es/universo-mol-cula-por-isa-as-herrero/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-22-ah-by-k-michel-and-dirk-vis.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-22-ah-por-k-michel-y-dirk-vis.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2008/ah-by-k-michel-and-dirk-vis/",
+      "es_permalink": "/es/2008-es/ah-por-k-michel-y-dirk-vis/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-03-andromeda-by-caitlin-fisher.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-03-andromeda-por-caitlin-fisher.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2008/andromeda-by-caitlin-fisher/",
+      "es_permalink": "/es/2008-es/andromeda-por-caitlin-fisher/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-23-ppg256-by-nick-montfort.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-23-ppg256-por-nick-montfort.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2008/ppg256-by-nick-montfort/",
+      "es_permalink": "/es/2008-es/ppg256-por-nick-montfort/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-09-roulette-by-daniel-c-howe-and-bebe-molina.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-09-roulette-por-daniel-c-howe-y-bebe-molina.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2008/roulette-by-daniel-c-howe-and-bebe-molina/",
+      "es_permalink": "/es/2008-es/roulette-por-daniel-c-howe-y-bebe-molina/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-12-04-88-constellations-for-wittgenstein-by-david-clark.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-12-04-88-constellations-for-wittgenstein-por-david-clark.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2009/88-constellations-for-wittgenstein-by-david-clark/",
+      "es_permalink": "/es/2009-es/88-constellations-for-wittgenstein-por-david-clark/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-29-toucher-by-serge-bouchardon-kevin-carpentier-and.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-29-toucher-por-serge-bouchardon-kevin-carpentier-and.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2009/toucher-by-serge-bouchardon-kevin-carpentier-and/",
+      "es_permalink": "/es/2009-es/toucher-por-serge-bouchardon-kevin-carpentier-and/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-21-cross-ova-ing-4rm-blog-2-log-by-mez.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-21-cross-ova-ing-4rm-blog-2-log-por-mez.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2010/cross-ova-ing-4rm-blog-2-log-by-mez/",
+      "es_permalink": "/es/2010-es/cross-ova-ing-4rm-blog-2-log-por-mez/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-10-05-poemita-by-eduardo-navas.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-10-05-poemita-por-eduardo-navas.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2010/poemita-by-eduardo-navas/",
+      "es_permalink": "/es/2010-es/poemita-por-eduardo-navas/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-12-03-5-haitis-by-simon-kerr.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-12-03-5-haitis-por-simon-kerr.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2011/5-haitis-by-simon-kerr/",
+      "es_permalink": "/es/2011-es/5-haitis-por-simon-kerr/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-12-17-alone-engaged-by-maria-engberg.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-12-17-alone-engaged-por-maria-engberg.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2011/alone-engaged-by-maria-engberg/",
+      "es_permalink": "/es/2011-es/alone-engaged-por-maria-engberg/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-07-20-radikal-karaoke-by-belen-gache.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-07-20-radikal-karaoke-por-belen-gache.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2011/radikal-karaoke-by-belen-gache/",
+      "es_permalink": "/es/2011-es/radikal-karaoke-por-belen-gache/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-07-03-werner-twertzog-back-from-the-dead.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-07-03-werner-twertzog-back-from-the-dead.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2013/werner-twertzog-back-from-the-dead/",
+      "es_permalink": "/es/2013-es/werner-twertzog-back-from-the-dead/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-10-03-no-way-to-prevent-this-by-the-onion-staff-writers.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-10-03-no-way-to-prevent-this-por-the-onion-staff-writers.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2014/no-way-to-prevent-this-by-the-onion-staff-writers/",
+      "es_permalink": "/es/2014-es/no-way-to-prevent-this-por-the-onion-staff-writers/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-10-04-nra-tally-nra_tally-by-mark-sample.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-10-04-nra-tally-nra_tally-por-mark-sample.html",
+      "direction": "en->es",
+      "en_permalink": "/en/2014/nra-tally-nra_tally-by-mark-sample/",
+      "es_permalink": "/es/2014-es/nra-tally-nra_tally-por-mark-sample/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2014-03-20-teaching-entre-ville-by-j-r-carpenter.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2014-03-20-teaching-entre-ville-por-j-r-carpenter.html",
+      "direction": "en->es",
+      "en_permalink": "/en/adult/teaching-entre-ville-by-j-r-carpenter/",
+      "es_permalink": "/es/adult-es/teaching-entre-ville-por-j-r-carpenter/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2016-03-15-cfp-reading-the-electronic-literature-collection-volume-3.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2016-03-15-cfp-reading-the-electronic-literature-collection-volume-3.html",
+      "direction": "en->es",
+      "en_permalink": "/en/cfp/cfp-reading-the-electronic-literature-collection-volume-3/",
+      "es_permalink": "/es/uncategorized/cfp-reading-the-electronic-literature-collection-volume-3/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2013-09-01-cfp-the-poetics-of-electronic-literature.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2013-09-01-cfp-the-poetics-of-electronic-literature.html",
+      "direction": "en->es",
+      "en_permalink": "/en/cfp/cfp-the-poetics-of-electronic-literature/",
+      "es_permalink": "/es/uncategorized/cfp-the-poetics-of-electronic-literature/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-26-electronic-literature-collection-volume-1-a.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-26-electronic-literature-collection-volume-1-a.html",
+      "direction": "en->es",
+      "en_permalink": "/en/electronic-literature-collection-vol-1/electronic-literature-collection-volume-1-a/",
+      "es_permalink": "/es/electronic-literature-collection-vol-1-es/electronic-literature-collection-volume-1-a/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2025-07-15-i-love-epoetry-is-back.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2025-07-15-i-love-epoetry-is-back.html",
+      "direction": "en->es",
+      "en_permalink": "/en/news-2/i-love-epoetry-is-back/",
+      "es_permalink": "/es/news-es/i-love-epoetry-is-back/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2013-08-27-call-for-regular-contributors.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2013-08-27-call-for-regular-contributors.html",
+      "direction": "en->es",
+      "en_permalink": "/en/news/call-for-regular-contributors/",
+      "es_permalink": "/es/news-es/call-for-regular-contributors/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2013-03-07-i-e-poetry-advisory-board.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2013-03-07-i-e-poetry-advisory-board.html",
+      "direction": "en->es",
+      "en_permalink": "/en/news/i-e-poetry-advisory-board/",
+      "es_permalink": "/es/news-es/i-e-poetry-advisory-board/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2013-05-08-new-tools-for-exploring-i-♥-e-poetry.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2013-05-08-new-tools-for-exploring-i-♥-e-poetry.html",
+      "direction": "en->es",
+      "en_permalink": "/en/news/new-tools-for-exploring-i-♥-e-poetry/",
+      "es_permalink": "/es/news-es/new-tools-for-exploring-i-♥-e-poetry/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2013-05-07-open-call-for-contributions.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2013-05-07-open-call-for-contributions.html",
+      "direction": "en->es",
+      "en_permalink": "/en/news/open-call-for-contributions/",
+      "es_permalink": "/es/news-es/open-call-for-contributions/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-03-20-saludos-espana-2.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-03-20-saludos-espana-2.html",
+      "direction": "en->es",
+      "en_permalink": "/en/news/saludos-espana-2/",
+      "es_permalink": "/es/news-es/saludos-espana-2/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-02-04-saludos-mexico.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-02-04-saludos-mexico.html",
+      "direction": "en->es",
+      "en_permalink": "/en/news/saludos-mexico/",
+      "es_permalink": "/es/news-es/saludos-mexico/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2014-11-02-site-redesign-underway.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2014-11-02-site-redesign-underway.html",
+      "direction": "en->es",
+      "en_permalink": "/en/news/site-redesign-underway/",
+      "es_permalink": "/es/news-es/site-redesign-underway/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2013-08-26-the-i-♥-e-poetry-summer-of-pedagogy-report.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2013-08-26-the-i-♥-e-poetry-summer-of-pedagogy-report.html",
+      "direction": "en->es",
+      "en_permalink": "/en/news/the-i-♥-e-poetry-summer-of-pedagogy-report/",
+      "es_permalink": "/es/news-es/the-i-♥-e-poetry-summer-of-pedagogy-report/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-07-13-new-contributor-claire-taylor.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-07-13-new-contributor-claire-taylor.html",
+      "direction": "en->es",
+      "en_permalink": "/en/uncategorized/new-contributor-claire-taylor/",
+      "es_permalink": "/es/uncategorized/new-contributor-claire-taylor/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-04-30-american-e-poetry.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-04-30-american-e-poetry.html",
+      "direction": "en->es",
+      "en_permalink": "/en/united-states/american-e-poetry/",
+      "es_permalink": "/es/united-states-es/american-e-poetry/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-06-10-tierra-de-extraccion-by-domenico-chiappe.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-06-10-tierra-de-extraccion-by-domenico-chiappe.html",
+      "direction": "es->en",
+      "es_permalink": "/es/2000-es/tierra-de-extraccion-by-domenico-chiappe/",
+      "en_permalink": "/en/2000/tierra-de-extraccion-by-domenico-chiappe/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-05-17-tierra-de-extraccion-de-domenico-chiappe.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-05-17-tierra-de-extraccion-de-domenico-chiappe.html",
+      "direction": "es->en",
+      "es_permalink": "/es/2000-es/tierra-de-extraccion-de-domenico-chiappe/",
+      "en_permalink": "/en/2000/tierra-de-extraccion-de-domenico-chiappe/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-03-16-tierra-de-extraccion-por-domenico-chiappe.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-03-16-tierra-de-extraccion-by-domenico-chiappe.html",
+      "direction": "es->en",
+      "es_permalink": "/es/2000-es/tierra-de-extraccion-por-domenico-chiappe/",
+      "en_permalink": "/en/2000/tierra-de-extraccion-by-domenico-chiappe/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-03-12-endless-reader-by-originator-2.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-03-12-endless-reader-by-originator-2.html",
+      "direction": "es->en",
+      "es_permalink": "/es/2013-es/endless-reader-by-originator-2/",
+      "en_permalink": "/en/2013/endless-reader-by-originator-2/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2014-12-25-endless-reader-by-originator.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2014-12-25-endless-reader-by-originator.html",
+      "direction": "es->en",
+      "es_permalink": "/es/2013-es/endless-reader-by-originator/",
+      "en_permalink": "/en/2013/endless-reader-by-originator/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-05-19-endless-reader-de-originator.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-05-19-endless-reader-de-originator.html",
+      "direction": "es->en",
+      "es_permalink": "/es/2013-es/endless-reader-de-originator/",
+      "en_permalink": "/en/2013/endless-reader-de-originator/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-05-16-juegos-de-i-♥-e-poetry.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-05-16-juegos-de-i-♥-e-poetry.html",
+      "direction": "es->en",
+      "es_permalink": "/es/adult-es/juegos-de-i-♥-e-poetry/",
+      "en_permalink": "/en/adult/juegos-de-i-♥-e-poetry/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2017-08-26-hello-world-en-espanol.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2017-08-26-hello-world-en-espanol.html",
+      "direction": "es->en",
+      "es_permalink": "/es/adult/hello-world-en-espanol/",
+      "en_permalink": "/en/adult/hello-world-en-espanol/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2017-03-07-undertale-por-toby-fox.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2017-03-07-undertale-by-toby-fox.html",
+      "direction": "es->en",
+      "es_permalink": "/es/aural-es/undertale-por-toby-fox/",
+      "en_permalink": "/en/aural/undertale-by-toby-fox/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2011-12-20-hello-world-2.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2011-12-20-hello-world-2.html",
+      "direction": "es->en",
+      "es_permalink": "/es/e-poetry-es/hello-world-2/",
+      "en_permalink": "/en/e-poetry/hello-world-2/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-04-16-firefly-por-deena-larsen-2.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-04-16-firefly-by-deena-larsen-2.html",
+      "direction": "es->en",
+      "es_permalink": "/es/kinetic-es/firefly-por-deena-larsen-2/",
+      "en_permalink": "/en/kinetic/firefly-by-deena-larsen-2/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-05-02-convocatoria-abierta-para-contribuciones.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-05-02-convocatoria-abierta-para-contribuciones.html",
+      "direction": "es->en",
+      "es_permalink": "/es/news-es/convocatoria-abierta-para-contribuciones/",
+      "en_permalink": "/en/news/convocatoria-abierta-para-contribuciones/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-05-07-el-informe-de-verano-de-pedagogia-i-♥-e-poesia.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-05-07-el-informe-de-verano-de-pedagogia-i-♥-e-poesia.html",
+      "direction": "es->en",
+      "es_permalink": "/es/news-es/el-informe-de-verano-de-pedagogia-i-♥-e-poesia/",
+      "en_permalink": "/en/news/el-informe-de-verano-de-pedagogia-i-♥-e-poesia/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-05-07-llame-para-contribuyentes-regulares.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-05-07-llame-para-contribuyentes-regulares.html",
+      "direction": "es->en",
+      "es_permalink": "/es/news-es/llame-para-contribuyentes-regulares/",
+      "en_permalink": "/en/news/llame-para-contribuyentes-regulares/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-04-30-nuevas-herramientas-para-explorar-i-♥-e-poetry.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-04-30-nuevas-herramientas-para-explorar-i-♥-e-poetry.html",
+      "direction": "es->en",
+      "es_permalink": "/es/news-es/nuevas-herramientas-para-explorar-i-♥-e-poetry/",
+      "en_permalink": "/en/news/nuevas-herramientas-para-explorar-i-♥-e-poetry/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-05-19-rediseno-del-sitio-en-marcha.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-05-19-rediseno-del-sitio-en-marcha.html",
+      "direction": "es->en",
+      "es_permalink": "/es/news-es/rediseno-del-sitio-en-marcha/",
+      "en_permalink": "/en/news/rediseno-del-sitio-en-marcha/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2016-04-28-i-♥︎-e-poetry-en-la-segunda-cumbre-internacional-los-padres-de-ahora.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2016-04-28-i-♥︎-e-poetry-en-la-segunda-cumbre-internacional-los-padres-de-ahora.html",
+      "direction": "es->en",
+      "es_permalink": "/es/news/i-♥︎-e-poetry-en-la-segunda-cumbre-internacional-los-padres-de-ahora/",
+      "en_permalink": "/en/news/i-♥︎-e-poetry-en-la-segunda-cumbre-internacional-los-padres-de-ahora/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2016-04-19-mensaje-del-editor-bienvenidos-a-i-♥-e-poetry.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2016-04-19-mensaje-del-editor-bienvenidos-a-i-♥-e-poetry.html",
+      "direction": "es->en",
+      "es_permalink": "/es/news/mensaje-del-editor-bienvenidos-a-i-♥-e-poetry/",
+      "en_permalink": "/en/news/mensaje-del-editor-bienvenidos-a-i-♥-e-poetry/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2016-04-19-ejemplos-de-literatura-electronica.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2016-04-19-ejemplos-de-literatura-electronica.html",
+      "direction": "es->en",
+      "es_permalink": "/es/resources/ejemplos-de-literatura-electronica/",
+      "en_permalink": "/en/resources/ejemplos-de-literatura-electronica/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-05-07-cfp-la-poetica-de-la-literatura-electronica.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-05-07-cfp-la-poetica-de-la-literatura-electronica.html",
+      "direction": "es->en",
+      "es_permalink": "/es/uncategorized/cfp-la-poetica-de-la-literatura-electronica/",
+      "en_permalink": "/en/uncategorized/cfp-la-poetica-de-la-literatura-electronica/"
+    },
+    {
+      "source": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-11-03-i-♥-e-poetry-visita-la-feria-internacional-del-libro-eugenio-maria-de-hostos.html",
+      "target": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-11-03-i-♥-e-poetry-visita-la-feria-internacional-del-libro-eugenio-maria-de-hostos.html",
+      "direction": "es->en",
+      "es_permalink": "/es/uncategorized/i-♥-e-poetry-visita-la-feria-internacional-del-libro-eugenio-maria-de-hostos/",
+      "en_permalink": "/en/uncategorized/i-♥-e-poetry-visita-la-feria-internacional-del-libro-eugenio-maria-de-hostos/"
+    }
+  ],
+  "translation_tasks": [
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-18-internet-text-1994-through-feb-2-2006-by-alan.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-18-internet-text-1994-through-feb-2-2006-por-alan.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/1994/internet-text-1994-through-feb-2-2006-by-alan/",
+      "target_permalink": "/es/1994-es/internet-text-1994-through-feb-2-2006-por-alan/",
+      "title": "\"Internet Text, 1994- [Through Feb 2, 2006]\" by Alan Sondheim",
+      "needs_body_translation": true,
+      "word_count": 244
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-03-13-the-click-poems-by-david-knoebel.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-03-13-the-click-poems-por-david-knoebel.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/1997/the-click-poems-by-david-knoebel/",
+      "target_permalink": "/es/1997-es/the-click-poems-por-david-knoebel/",
+      "title": "\"The Click Poems\" by David Knoebel",
+      "needs_body_translation": true,
+      "word_count": 170
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-04-rice-by-geniwate.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-04-rice-por-geniwate.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/1998/rice-by-geniwate/",
+      "target_permalink": "/es/1998-es/rice-por-geniwate/",
+      "title": "\"Rice\" by geniwate",
+      "needs_body_translation": true,
+      "word_count": 204
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-08-31-gabriella-infinita-by-jaime-alejandro-rodriguez.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-08-31-gabriella-infinita-por-jaime-alejandro-rodriguez.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/1999/gabriella-infinita-by-jaime-alejandro-rodriguez/",
+      "target_permalink": "/es/1999-es/gabriella-infinita-por-jaime-alejandro-rodriguez/",
+      "title": "\"Gabriella infinita\" by Jaime Alejandro Rodríguez",
+      "needs_body_translation": true,
+      "word_count": 478
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-25-strings-by-dan-waber.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-25-strings-por-dan-waber.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/1999/strings-by-dan-waber/",
+      "target_permalink": "/es/1999-es/strings-por-dan-waber/",
+      "title": "\"Strings\" by Dan Waber",
+      "needs_body_translation": true,
+      "word_count": 118
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-05-white-faced-bromeliads-on-20-hectares-by-loss-peque-o.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-05-white-faced-bromeliads-on-20-hectares-por-loss-peque-o.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/1999/white-faced-bromeliads-on-20-hectares-by-loss-peque-o/",
+      "target_permalink": "/es/1999-es/white-faced-bromeliads-on-20-hectares-por-loss-peque-o/",
+      "title": "\"White-Faced Bromeliads on 20 Hectares\" by Loss Pequeño Glazier",
+      "needs_body_translation": true,
+      "word_count": 164
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-06-jabber-by-neil-hennessy.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-06-jabber-por-neil-hennessy.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2000/jabber-by-neil-hennessy/",
+      "target_permalink": "/es/2000-es/jabber-por-neil-hennessy/",
+      "title": "\"Jabber\" by Neil Hennessy",
+      "needs_body_translation": true,
+      "word_count": 155
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-03-14-thoughts-go-by-david-knoebel.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-03-14-thoughts-go-por-david-knoebel.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2001/thoughts-go-by-david-knoebel/",
+      "target_permalink": "/es/2001-es/thoughts-go-por-david-knoebel/",
+      "title": "\"Thoughts Go\" by David Knoebel",
+      "needs_body_translation": true,
+      "word_count": 140
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2011-12-30-accounts-of-the-glass-sky-by-m-d-coverley.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2011-12-30-accounts-of-the-glass-sky-por-m-d-coverley.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2002/accounts-of-the-glass-sky-by-m-d-coverley/",
+      "target_permalink": "/es/2002-es/accounts-of-the-glass-sky-por-m-d-coverley/",
+      "title": "\"Accounts of the Glass Sky\" by M. D. Coverley",
+      "needs_body_translation": true,
+      "word_count": 114
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-06-soliloquy-by-kenneth-goldsmith.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-06-soliloquy-por-kenneth-goldsmith.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2002/soliloquy-by-kenneth-goldsmith/",
+      "target_permalink": "/es/2002-es/soliloquy-por-kenneth-goldsmith/",
+      "title": "\"Soliloquy\" by Kenneth Goldsmith",
+      "needs_body_translation": true,
+      "word_count": 261
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2011-12-29-wotclock-by-john-cayley.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2011-12-29-wotclock-por-john-cayley.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2002/wotclock-by-john-cayley/",
+      "target_permalink": "/es/2002-es/wotclock-por-john-cayley/",
+      "title": "\"Wotclock\" by John Cayley",
+      "needs_body_translation": true,
+      "word_count": 122
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-19-dreamaphage-versions-1-and-2-by-jason-nelson.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-19-dreamaphage-versions-1-and-2-por-jason-nelson.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2003/dreamaphage-versions-1-and-2-by-jason-nelson/",
+      "target_permalink": "/es/2003-es/dreamaphage-versions-1-and-2-por-jason-nelson/",
+      "title": "\"Dreamaphage (Versions 1 and 2)\" by Jason Nelson",
+      "needs_body_translation": true,
+      "word_count": 151
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-27-separation-s-paration-by-annie-abrahams.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-27-separation-s-paration-por-annie-abrahams.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2003/separation-s-paration-by-annie-abrahams/",
+      "target_permalink": "/es/2003-es/separation-s-paration-por-annie-abrahams/",
+      "title": "\"Separation / Séparation\" by Annie Abrahams",
+      "needs_body_translation": true,
+      "word_count": 164
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-07-13-eveline-fragmentos-de-una-respuesta-by-marina-zerbarini.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-07-13-eveline-fragmentos-de-una-respuesta-por-marina-zerbarini.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2004/eveline-fragmentos-de-una-respuesta-by-marina-zerbarini/",
+      "target_permalink": "/es/2004-es/eveline-fragmentos-de-una-respuesta-por-marina-zerbarini/",
+      "title": "\"Eveline, fragmentos de una respuesta\" by Marina Zerbarini",
+      "needs_body_translation": true,
+      "word_count": 407
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-22-ii-in-the-white-darkness-about-the-fragility-of.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-22-ii-in-the-white-darkness-about-the-fragility-of.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2004/ii-in-the-white-darkness-about-the-fragility-of/",
+      "target_permalink": "/es/2004-es/ii-in-the-white-darkness-about-the-fragility-of/",
+      "title": "\"ii — in the white darkness: about [the fragility of] memory\" by Reiner Strasser and M.D. Coverley",
+      "needs_body_translation": true,
+      "word_count": 130
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-07-open-ended-by-daniel-c-howe-and-aya-karpinska.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-07-open-ended-por-daniel-c-howe-y-aya-karpinska.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2004/open-ended-by-daniel-c-howe-and-aya-karpinska/",
+      "target_permalink": "/es/2004-es/open-ended-por-daniel-c-howe-y-aya-karpinska/",
+      "title": "\"open.ended\" by Daniel C. Howe and Aya Karpinska",
+      "needs_body_translation": true,
+      "word_count": 172
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-15-oulipoems-by-millie-niss-with-martha-deed.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-15-oulipoems-por-millie-niss-with-martha-deed.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2004/oulipoems-by-millie-niss-with-martha-deed/",
+      "target_permalink": "/es/2004-es/oulipoems-por-millie-niss-with-martha-deed/",
+      "title": "\"Oulipoems\" by Millie Niss with Martha Deed",
+      "needs_body_translation": true,
+      "word_count": 381
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-24-tao-by-reiner-strasser-and-alan-sondheim.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-24-tao-por-reiner-strasser-y-alan-sondheim.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2004/tao-by-reiner-strasser-and-alan-sondheim/",
+      "target_permalink": "/es/2004-es/tao-por-reiner-strasser-y-alan-sondheim/",
+      "title": "\"Tao\" by Reiner Strasser and Alan Sondheim",
+      "needs_body_translation": true,
+      "word_count": 124
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2011-12-27-translation-by-john-cayley.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2011-12-27-translation-por-john-cayley.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2004/translation-by-john-cayley/",
+      "target_permalink": "/es/2004-es/translation-por-john-cayley/",
+      "title": "\"Translation\" by John Cayley",
+      "needs_body_translation": true,
+      "word_count": 204
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-23-dawn-by-reiner-strasser-and-alan-sondheim.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-23-dawn-por-reiner-strasser-y-alan-sondheim.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2005/dawn-by-reiner-strasser-and-alan-sondheim/",
+      "target_permalink": "/es/2005-es/dawn-por-reiner-strasser-y-alan-sondheim/",
+      "title": "\"Dawn\" by Reiner Strasser and Alan Sondheim",
+      "needs_body_translation": true,
+      "word_count": 126
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-17-diagrams-series-6-6-4-and-6-10-by-jim-rosenberg.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-17-diagrams-series-6-6-4-and-6-10-por-jim-rosenberg.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2005/diagrams-series-6-6-4-and-6-10-by-jim-rosenberg/",
+      "target_permalink": "/es/2005-es/diagrams-series-6-6-4-and-6-10-por-jim-rosenberg/",
+      "title": "\"Diagrams Series 6: 6.4 and 6.10\" by Jim Rosenberg",
+      "needs_body_translation": true,
+      "word_count": 155
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-03-generative-poetry-by-geniwate.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-03-generative-poetry-por-geniwate.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2005/generative-poetry-by-geniwate/",
+      "target_permalink": "/es/2005-es/generative-poetry-por-geniwate/",
+      "title": "\"Generative Poetry\" by geniwate",
+      "needs_body_translation": true,
+      "word_count": 177
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-26-i-you-we-by-dan-waber-and-jason-pimble.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-26-i-you-we-por-dan-waber-y-jason-pimble.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2005/i-you-we-by-dan-waber-and-jason-pimble/",
+      "target_permalink": "/es/2005-es/i-you-we-por-dan-waber-y-jason-pimble/",
+      "title": "\"I, You, We\" by Dan Waber and Jason Pimble",
+      "needs_body_translation": true,
+      "word_count": 120
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-14-link-to-poems-note-root-soul-and-snow.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-14-link-to-poems-note-root-soul-and-snow.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2005/link-to-poems-note-root-soul-and-snow/",
+      "target_permalink": "/es/2005-es/link-to-poems-note-root-soul-and-snow/",
+      "title": "\"Sooth (part 3 of 3)\" by David Jhave Johnston",
+      "needs_body_translation": true,
+      "word_count": 306
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-13-link-to-poems-note-weeds-and-body-are-part.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-13-link-to-poems-note-weeds-and-body-are-part.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2005/link-to-poems-note-weeds-and-body-are-part/",
+      "target_permalink": "/es/2005-es/link-to-poems-note-weeds-and-body-are-part/",
+      "title": "\"Sooth (part 2 of 3)\" by David Jhave Johnston",
+      "needs_body_translation": true,
+      "word_count": 158
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-16-project-for-tachistoscope-bottomless-pit-by-william.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-16-project-for-tachistoscope-bottomless-pit-por-william.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2005/project-for-tachistoscope-bottomless-pit-by-william/",
+      "target_permalink": "/es/2005-es/project-for-tachistoscope-bottomless-pit-por-william/",
+      "title": "\"Project for Tachistoscope [Bottomless Pit]\" by William Poundstone",
+      "needs_body_translation": true,
+      "word_count": 137
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-13-sooth-by-david-jhave-johnston.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-13-sooth-por-david-jhave-johnston.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2005/sooth-by-david-jhave-johnston/",
+      "target_permalink": "/es/2005-es/sooth-por-david-jhave-johnston/",
+      "title": "\"Sooth (part 1 of 3)\" by David Jhave Johnston",
+      "needs_body_translation": true,
+      "word_count": 199
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-20-star-wars-one-letter-at-a-time-by-brian-kim-stefans.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-20-star-wars-one-letter-at-a-time-por-brian-kim-stefans.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2005/star-wars-one-letter-at-a-time-by-brian-kim-stefans/",
+      "target_permalink": "/es/2005-es/star-wars-one-letter-at-a-time-por-brian-kim-stefans/",
+      "title": "\"Star Wars, one letter at a time\" by Brian Kim Stefans",
+      "needs_body_translation": true,
+      "word_count": 231
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-25-still-standing-by-bruno-nadeau-and-jason-edward-lewis.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-25-still-standing-por-bruno-nadeau-y-jason-edward-lewis.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2005/still-standing-by-bruno-nadeau-and-jason-edward-lewis/",
+      "target_permalink": "/es/2005-es/still-standing-por-bruno-nadeau-y-jason-edward-lewis/",
+      "title": "\"Still Standing\" by Bruno Nadeau and Jason Edward Lewis",
+      "needs_body_translation": true,
+      "word_count": 158
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-27-this-is-how-you-will-die-by-jason-nelson.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-27-this-is-how-you-will-die-por-jason-nelson.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2005/this-is-how-you-will-die-by-jason-nelson/",
+      "target_permalink": "/es/2005-es/this-is-how-you-will-die-por-jason-nelson/",
+      "title": "\"This Is How You Will Die\" by Jason Nelson",
+      "needs_body_translation": true,
+      "word_count": 107
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-11-18-all-the-news-thats-fit-to-print-by-jody-zellen.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-11-18-all-the-news-thats-fit-to-print-por-jody-zellen.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2006/all-the-news-thats-fit-to-print-by-jody-zellen/",
+      "target_permalink": "/es/2006-es/all-the-news-thats-fit-to-print-por-jody-zellen/",
+      "title": "\"All the News that's Fit to Print\" by Jody Zellen",
+      "needs_body_translation": true,
+      "word_count": 1636
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-01-chemical-landscapes-digital-tales-by-edward-falco.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-01-chemical-landscapes-digital-tales-por-edward-falco.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2006/chemical-landscapes-digital-tales-by-edward-falco/",
+      "target_permalink": "/es/2006-es/chemical-landscapes-digital-tales-por-edward-falco/",
+      "title": "\"Chemical Landscapes Digital Tales\" by Edward Falco",
+      "needs_body_translation": true,
+      "word_count": 127
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-08-family-tree-by-rosalie-hirs-and-harm-van-den-dorpel.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-08-family-tree-por-rosalie-hirs-y-harm-van-den-dorpel.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2006/family-tree-by-rosalie-hirs-and-harm-van-den-dorpel/",
+      "target_permalink": "/es/2006-es/family-tree-por-rosalie-hirs-y-harm-van-den-dorpel/",
+      "title": "\"Family Tree\" by Rosalie Hirs and Harm Van Den Dorpel",
+      "needs_body_translation": true,
+      "word_count": 142
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-21-palavrador-by-chico-marinho.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-21-palavrador-por-chico-marinho.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2006/palavrador-by-chico-marinho/",
+      "target_permalink": "/es/2006-es/palavrador-por-chico-marinho/",
+      "title": "\"Palavrador\" by Chico Marinho",
+      "needs_body_translation": true,
+      "word_count": 108
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-30-the-mandrake-vehicles-by-oni-buchanan.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-30-the-mandrake-vehicles-por-oni-buchanan.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2006/the-mandrake-vehicles-by-oni-buchanan/",
+      "target_permalink": "/es/2006-es/the-mandrake-vehicles-por-oni-buchanan/",
+      "title": "\"The Mandrake Vehicles\" by Oni Buchanan",
+      "needs_body_translation": true,
+      "word_count": 132
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-02-thehouse-by-mary-flanagan-this-is-a-challenging.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-02-thehouse-por-mary-flanagan-this-is-a-challenging.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2006/thehouse-by-mary-flanagan-this-is-a-challenging/",
+      "target_permalink": "/es/2006-es/thehouse-por-mary-flanagan-this-is-a-challenging/",
+      "title": "\"[theHouse]\" by Mary Flanagan",
+      "needs_body_translation": true,
+      "word_count": 122
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2013-01-27-a-dialogue-between-two-eyeballs-by-braxton-soderman.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2013-01-27-a-dialogue-between-two-eyeballs-por-braxton-soderman.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2007/a-dialogue-between-two-eyeballs-by-braxton-soderman/",
+      "target_permalink": "/es/2007-es/a-dialogue-between-two-eyeballs-por-braxton-soderman/",
+      "title": "\"A Dialogue Between Two Eyeballs\" by Braxton Soderman",
+      "needs_body_translation": true,
+      "word_count": 212
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-24-the-last-performance-by-judd-morrissey.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-24-the-last-performance-por-judd-morrissey.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2007/the-last-performance-by-judd-morrissey/",
+      "target_permalink": "/es/2007-es/the-last-performance-por-judd-morrissey/",
+      "title": "\"The Last Performance\" by Judd Morrissey",
+      "needs_body_translation": true,
+      "word_count": 152
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-07-universo-mol-cula-by-isa-as-herrero.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-07-universo-mol-cula-por-isa-as-herrero.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2007/universo-mol-cula-by-isa-as-herrero/",
+      "target_permalink": "/es/2007-es/universo-mol-cula-por-isa-as-herrero/",
+      "title": "\"Universo Molécula\" by Isaías Herrero",
+      "needs_body_translation": true,
+      "word_count": 129
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-22-ah-by-k-michel-and-dirk-vis.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-22-ah-por-k-michel-y-dirk-vis.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2008/ah-by-k-michel-and-dirk-vis/",
+      "target_permalink": "/es/2008-es/ah-por-k-michel-y-dirk-vis/",
+      "title": "\"Ah\" by K. Michel and Dirk Vis",
+      "needs_body_translation": true,
+      "word_count": 120
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-03-andromeda-by-caitlin-fisher.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-03-andromeda-por-caitlin-fisher.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2008/andromeda-by-caitlin-fisher/",
+      "target_permalink": "/es/2008-es/andromeda-por-caitlin-fisher/",
+      "title": "\"Andromeda\" by Caitlin Fisher",
+      "needs_body_translation": true,
+      "word_count": 140
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-23-ppg256-by-nick-montfort.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-23-ppg256-por-nick-montfort.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2008/ppg256-by-nick-montfort/",
+      "target_permalink": "/es/2008-es/ppg256-por-nick-montfort/",
+      "title": "\"ppg256\" by Nick Montfort",
+      "needs_body_translation": true,
+      "word_count": 239
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-09-roulette-by-daniel-c-howe-and-bebe-molina.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-09-roulette-por-daniel-c-howe-y-bebe-molina.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2008/roulette-by-daniel-c-howe-and-bebe-molina/",
+      "target_permalink": "/es/2008-es/roulette-por-daniel-c-howe-y-bebe-molina/",
+      "title": "\"Roulette\" by Daniel C. Howe and Bebe Molina",
+      "needs_body_translation": true,
+      "word_count": 106
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-12-04-88-constellations-for-wittgenstein-by-david-clark.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-12-04-88-constellations-for-wittgenstein-por-david-clark.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2009/88-constellations-for-wittgenstein-by-david-clark/",
+      "target_permalink": "/es/2009-es/88-constellations-for-wittgenstein-por-david-clark/",
+      "title": "\"88 Constellations for Wittgenstein\" by David Clark",
+      "needs_body_translation": true,
+      "word_count": 356
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-29-toucher-by-serge-bouchardon-kevin-carpentier-and.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-29-toucher-por-serge-bouchardon-kevin-carpentier-and.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2009/toucher-by-serge-bouchardon-kevin-carpentier-and/",
+      "target_permalink": "/es/2009-es/toucher-por-serge-bouchardon-kevin-carpentier-and/",
+      "title": "\"Toucher\" by Serge Bouchardon, Kevin Carpentier, and Stéphanie Spenlé",
+      "needs_body_translation": true,
+      "word_count": 130
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-02-21-cross-ova-ing-4rm-blog-2-log-by-mez.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-02-21-cross-ova-ing-4rm-blog-2-log-por-mez.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2010/cross-ova-ing-4rm-blog-2-log-by-mez/",
+      "target_permalink": "/es/2010-es/cross-ova-ing-4rm-blog-2-log-por-mez/",
+      "title": "\"_cross.ova.ing ][4rm.blog.2.log][_ \" by Mez",
+      "needs_body_translation": true,
+      "word_count": 158
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-10-05-poemita-by-eduardo-navas.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-10-05-poemita-por-eduardo-navas.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2010/poemita-by-eduardo-navas/",
+      "target_permalink": "/es/2010-es/poemita-por-eduardo-navas/",
+      "title": "\"Poemita\" by Eduardo Navas",
+      "needs_body_translation": true,
+      "word_count": 453
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-12-03-5-haitis-by-simon-kerr.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-12-03-5-haitis-por-simon-kerr.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2011/5-haitis-by-simon-kerr/",
+      "target_permalink": "/es/2011-es/5-haitis-por-simon-kerr/",
+      "title": "\"5 Haitis\" by Simon Kerr",
+      "needs_body_translation": true,
+      "word_count": 445
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-12-17-alone-engaged-by-maria-engberg.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-12-17-alone-engaged-por-maria-engberg.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2011/alone-engaged-by-maria-engberg/",
+      "target_permalink": "/es/2011-es/alone-engaged-por-maria-engberg/",
+      "title": "\"Alone Engaged\" by Maria Engberg",
+      "needs_body_translation": true,
+      "word_count": 357
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-07-20-radikal-karaoke-by-belen-gache.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-07-20-radikal-karaoke-por-belen-gache.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2011/radikal-karaoke-by-belen-gache/",
+      "target_permalink": "/es/2011-es/radikal-karaoke-por-belen-gache/",
+      "title": "Radikal Karaoke by Belén Gache",
+      "needs_body_translation": true,
+      "word_count": 511
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-07-03-werner-twertzog-back-from-the-dead.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-07-03-werner-twertzog-back-from-the-dead.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2013/werner-twertzog-back-from-the-dead/",
+      "target_permalink": "/es/2013-es/werner-twertzog-back-from-the-dead/",
+      "title": "Werner Twertzog-- Back from the Dead",
+      "needs_body_translation": true,
+      "word_count": 474
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-10-03-no-way-to-prevent-this-by-the-onion-staff-writers.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-10-03-no-way-to-prevent-this-por-the-onion-staff-writers.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2014/no-way-to-prevent-this-by-the-onion-staff-writers/",
+      "target_permalink": "/es/2014-es/no-way-to-prevent-this-por-the-onion-staff-writers/",
+      "title": "\"No Way to Prevent This\" by The Onion staff writers",
+      "needs_body_translation": true,
+      "word_count": 703
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-10-04-nra-tally-nra_tally-by-mark-sample.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-10-04-nra-tally-nra_tally-por-mark-sample.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/2014/nra-tally-nra_tally-by-mark-sample/",
+      "target_permalink": "/es/2014-es/nra-tally-nra_tally-por-mark-sample/",
+      "title": "\"NRA Tally (@NRA_Tally)\" by Mark Sample",
+      "needs_body_translation": true,
+      "word_count": 738
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2014-03-20-teaching-entre-ville-by-j-r-carpenter.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2014-03-20-teaching-entre-ville-por-j-r-carpenter.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/adult/teaching-entre-ville-by-j-r-carpenter/",
+      "target_permalink": "/es/adult-es/teaching-entre-ville-por-j-r-carpenter/",
+      "title": "Teaching “Entre Ville” by J. R. Carpenter",
+      "needs_body_translation": true,
+      "word_count": 146
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2016-03-15-cfp-reading-the-electronic-literature-collection-volume-3.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2016-03-15-cfp-reading-the-electronic-literature-collection-volume-3.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/cfp/cfp-reading-the-electronic-literature-collection-volume-3/",
+      "target_permalink": "/es/uncategorized/cfp-reading-the-electronic-literature-collection-volume-3/",
+      "title": "CFP: Reading The Electronic Literature Collection, Volume 3",
+      "needs_body_translation": true,
+      "word_count": 100
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2013-09-01-cfp-the-poetics-of-electronic-literature.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2013-09-01-cfp-the-poetics-of-electronic-literature.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/cfp/cfp-the-poetics-of-electronic-literature/",
+      "target_permalink": "/es/uncategorized/cfp-the-poetics-of-electronic-literature/",
+      "title": "CFP: The Poetics of Electronic Literature",
+      "needs_body_translation": true,
+      "word_count": 143
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2012-01-26-electronic-literature-collection-volume-1-a.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2012-01-26-electronic-literature-collection-volume-1-a.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/electronic-literature-collection-vol-1/electronic-literature-collection-volume-1-a/",
+      "target_permalink": "/es/electronic-literature-collection-vol-1-es/electronic-literature-collection-volume-1-a/",
+      "title": "Electronic Literature Collection, Volume 1: A Retrospect",
+      "needs_body_translation": true,
+      "word_count": 467
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2025-07-15-i-love-epoetry-is-back.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2025-07-15-i-love-epoetry-is-back.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/news-2/i-love-epoetry-is-back/",
+      "target_permalink": "/es/news-es/i-love-epoetry-is-back/",
+      "title": "I ❤️ E-Poetry is back!",
+      "needs_body_translation": true,
+      "word_count": 462
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2013-08-27-call-for-regular-contributors.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2013-08-27-call-for-regular-contributors.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/news/call-for-regular-contributors/",
+      "target_permalink": "/es/news-es/call-for-regular-contributors/",
+      "title": "Call for Regular Contributors",
+      "needs_body_translation": true,
+      "word_count": 255
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2013-03-07-i-e-poetry-advisory-board.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2013-03-07-i-e-poetry-advisory-board.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/news/i-e-poetry-advisory-board/",
+      "target_permalink": "/es/news-es/i-e-poetry-advisory-board/",
+      "title": "I ♥ E-Poetry Advisory Board",
+      "needs_body_translation": true,
+      "word_count": 255
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2013-05-08-new-tools-for-exploring-i-♥-e-poetry.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2013-05-08-new-tools-for-exploring-i-♥-e-poetry.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/news/new-tools-for-exploring-i-♥-e-poetry/",
+      "target_permalink": "/es/news-es/new-tools-for-exploring-i-♥-e-poetry/",
+      "title": "New Tools for Exploring I ♥ E-Poetry",
+      "needs_body_translation": true,
+      "word_count": 165
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2013-05-07-open-call-for-contributions.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2013-05-07-open-call-for-contributions.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/news/open-call-for-contributions/",
+      "target_permalink": "/es/news-es/open-call-for-contributions/",
+      "title": "Open Call for Contributions",
+      "needs_body_translation": true,
+      "word_count": 119
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-03-20-saludos-espana-2.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-03-20-saludos-espana-2.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/news/saludos-espana-2/",
+      "target_permalink": "/es/news-es/saludos-espana-2/",
+      "title": "¡Saludos España!",
+      "needs_body_translation": true,
+      "word_count": 119
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-02-04-saludos-mexico.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-02-04-saludos-mexico.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/news/saludos-mexico/",
+      "target_permalink": "/es/news-es/saludos-mexico/",
+      "title": "¡Saludos México!",
+      "needs_body_translation": true,
+      "word_count": 217
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2014-11-02-site-redesign-underway.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2014-11-02-site-redesign-underway.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/news/site-redesign-underway/",
+      "target_permalink": "/es/news-es/site-redesign-underway/",
+      "title": "Site Redesign Underway",
+      "needs_body_translation": true,
+      "word_count": 31
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2013-08-26-the-i-♥-e-poetry-summer-of-pedagogy-report.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2013-08-26-the-i-♥-e-poetry-summer-of-pedagogy-report.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/news/the-i-♥-e-poetry-summer-of-pedagogy-report/",
+      "target_permalink": "/es/news-es/the-i-♥-e-poetry-summer-of-pedagogy-report/",
+      "title": "The I ♥ E-Poetry Summer of Pedagogy Report",
+      "needs_body_translation": true,
+      "word_count": 373
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-07-13-new-contributor-claire-taylor.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-07-13-new-contributor-claire-taylor.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/uncategorized/new-contributor-claire-taylor/",
+      "target_permalink": "/es/uncategorized/new-contributor-claire-taylor/",
+      "title": "New Contributor: Claire Taylor",
+      "needs_body_translation": true,
+      "word_count": 129
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-04-30-american-e-poetry.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-04-30-american-e-poetry.html",
+      "source_lang": "en",
+      "target_lang": "es",
+      "source_permalink": "/en/united-states/american-e-poetry/",
+      "target_permalink": "/es/united-states-es/american-e-poetry/",
+      "title": "American E-Poetry",
+      "needs_body_translation": true,
+      "word_count": 756
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-06-10-tierra-de-extraccion-by-domenico-chiappe.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-06-10-tierra-de-extraccion-by-domenico-chiappe.html",
+      "source_lang": "es",
+      "target_lang": "en",
+      "source_permalink": "/es/2000-es/tierra-de-extraccion-by-domenico-chiappe/",
+      "target_permalink": "/en/2000/tierra-de-extraccion-by-domenico-chiappe/",
+      "title": "“Tierra de Extracción” by Doménico Chiappe",
+      "needs_body_translation": true,
+      "word_count": 577
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-05-17-tierra-de-extraccion-de-domenico-chiappe.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-05-17-tierra-de-extraccion-de-domenico-chiappe.html",
+      "source_lang": "es",
+      "target_lang": "en",
+      "source_permalink": "/es/2000-es/tierra-de-extraccion-de-domenico-chiappe/",
+      "target_permalink": "/en/2000/tierra-de-extraccion-de-domenico-chiappe/",
+      "title": "“Tierra de Extracción” de Doménico Chiappe",
+      "needs_body_translation": true,
+      "word_count": 602
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-03-16-tierra-de-extraccion-por-domenico-chiappe.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-03-16-tierra-de-extraccion-by-domenico-chiappe.html",
+      "source_lang": "es",
+      "target_lang": "en",
+      "source_permalink": "/es/2000-es/tierra-de-extraccion-por-domenico-chiappe/",
+      "target_permalink": "/en/2000/tierra-de-extraccion-by-domenico-chiappe/",
+      "title": "“Tierra de Extracción” por Doménico Chiappe",
+      "needs_body_translation": true,
+      "word_count": 578
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-03-12-endless-reader-by-originator-2.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-03-12-endless-reader-by-originator-2.html",
+      "source_lang": "es",
+      "target_lang": "en",
+      "source_permalink": "/es/2013-es/endless-reader-by-originator-2/",
+      "target_permalink": "/en/2013/endless-reader-by-originator-2/",
+      "title": "\"Endless Reader\" por Originator",
+      "needs_body_translation": true,
+      "word_count": 483
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2014-12-25-endless-reader-by-originator.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2014-12-25-endless-reader-by-originator.html",
+      "source_lang": "es",
+      "target_lang": "en",
+      "source_permalink": "/es/2013-es/endless-reader-by-originator/",
+      "target_permalink": "/en/2013/endless-reader-by-originator/",
+      "title": "\"Endless Reader\" by Originator",
+      "needs_body_translation": true,
+      "word_count": 461
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-05-19-endless-reader-de-originator.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-05-19-endless-reader-de-originator.html",
+      "source_lang": "es",
+      "target_lang": "en",
+      "source_permalink": "/es/2013-es/endless-reader-de-originator/",
+      "target_permalink": "/en/2013/endless-reader-de-originator/",
+      "title": "\"Endless Reader\" de Originator",
+      "needs_body_translation": true,
+      "word_count": 240
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-05-16-juegos-de-i-♥-e-poetry.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-05-16-juegos-de-i-♥-e-poetry.html",
+      "source_lang": "es",
+      "target_lang": "en",
+      "source_permalink": "/es/adult-es/juegos-de-i-♥-e-poetry/",
+      "target_permalink": "/en/adult/juegos-de-i-♥-e-poetry/",
+      "title": "Juegos de I ♥ E-Poetry",
+      "needs_body_translation": true,
+      "word_count": 338
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2017-08-26-hello-world-en-espanol.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2017-08-26-hello-world-en-espanol.html",
+      "source_lang": "es",
+      "target_lang": "en",
+      "source_permalink": "/es/adult/hello-world-en-espanol/",
+      "target_permalink": "/en/adult/hello-world-en-espanol/",
+      "title": "Hello World (En español)",
+      "needs_body_translation": true,
+      "word_count": 346
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2017-03-07-undertale-por-toby-fox.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2017-03-07-undertale-by-toby-fox.html",
+      "source_lang": "es",
+      "target_lang": "en",
+      "source_permalink": "/es/aural-es/undertale-por-toby-fox/",
+      "target_permalink": "/en/aural/undertale-by-toby-fox/",
+      "title": "\"Undertale\" por Toby Fox",
+      "needs_body_translation": true,
+      "word_count": 627
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2011-12-20-hello-world-2.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2011-12-20-hello-world-2.html",
+      "source_lang": "es",
+      "target_lang": "en",
+      "source_permalink": "/es/e-poetry-es/hello-world-2/",
+      "target_permalink": "/en/e-poetry/hello-world-2/",
+      "title": "Hello world",
+      "needs_body_translation": true,
+      "word_count": 282
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-04-16-firefly-por-deena-larsen-2.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-04-16-firefly-by-deena-larsen-2.html",
+      "source_lang": "es",
+      "target_lang": "en",
+      "source_permalink": "/es/kinetic-es/firefly-por-deena-larsen-2/",
+      "target_permalink": "/en/kinetic/firefly-by-deena-larsen-2/",
+      "title": "\"Firefly\" por Deena Larsen",
+      "needs_body_translation": true,
+      "word_count": 198
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-05-02-convocatoria-abierta-para-contribuciones.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-05-02-convocatoria-abierta-para-contribuciones.html",
+      "source_lang": "es",
+      "target_lang": "en",
+      "source_permalink": "/es/news-es/convocatoria-abierta-para-contribuciones/",
+      "target_permalink": "/en/news/convocatoria-abierta-para-contribuciones/",
+      "title": "Convocatoria abierta para contribuciones",
+      "needs_body_translation": true,
+      "word_count": 122
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-05-07-el-informe-de-verano-de-pedagogia-i-♥-e-poesia.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-05-07-el-informe-de-verano-de-pedagogia-i-♥-e-poesia.html",
+      "source_lang": "es",
+      "target_lang": "en",
+      "source_permalink": "/es/news-es/el-informe-de-verano-de-pedagogia-i-♥-e-poesia/",
+      "target_permalink": "/en/news/el-informe-de-verano-de-pedagogia-i-♥-e-poesia/",
+      "title": "El Informe de Verano de Pedagogía I ♥ E-Poesía",
+      "needs_body_translation": true,
+      "word_count": 403
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-05-07-llame-para-contribuyentes-regulares.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-05-07-llame-para-contribuyentes-regulares.html",
+      "source_lang": "es",
+      "target_lang": "en",
+      "source_permalink": "/es/news-es/llame-para-contribuyentes-regulares/",
+      "target_permalink": "/en/news/llame-para-contribuyentes-regulares/",
+      "title": "Llame para Contribuyentes Regulares",
+      "needs_body_translation": true,
+      "word_count": 266
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-04-30-nuevas-herramientas-para-explorar-i-♥-e-poetry.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-04-30-nuevas-herramientas-para-explorar-i-♥-e-poetry.html",
+      "source_lang": "es",
+      "target_lang": "en",
+      "source_permalink": "/es/news-es/nuevas-herramientas-para-explorar-i-♥-e-poetry/",
+      "target_permalink": "/en/news/nuevas-herramientas-para-explorar-i-♥-e-poetry/",
+      "title": "Nuevas herramientas para explorar I ♥ E-Poetry",
+      "needs_body_translation": true,
+      "word_count": 185
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-05-19-rediseno-del-sitio-en-marcha.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-05-19-rediseno-del-sitio-en-marcha.html",
+      "source_lang": "es",
+      "target_lang": "en",
+      "source_permalink": "/es/news-es/rediseno-del-sitio-en-marcha/",
+      "target_permalink": "/en/news/rediseno-del-sitio-en-marcha/",
+      "title": "Rediseño del Sitio en Marcha",
+      "needs_body_translation": true,
+      "word_count": 31
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2016-04-28-i-♥︎-e-poetry-en-la-segunda-cumbre-internacional-los-padres-de-ahora.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2016-04-28-i-♥︎-e-poetry-en-la-segunda-cumbre-internacional-los-padres-de-ahora.html",
+      "source_lang": "es",
+      "target_lang": "en",
+      "source_permalink": "/es/news/i-♥︎-e-poetry-en-la-segunda-cumbre-internacional-los-padres-de-ahora/",
+      "target_permalink": "/en/news/i-♥︎-e-poetry-en-la-segunda-cumbre-internacional-los-padres-de-ahora/",
+      "title": "Invitación: I ♥︎ E-Poetry en la Segunda Cumbre Internacional Los Padres de Ahora",
+      "needs_body_translation": true,
+      "word_count": 443
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2016-04-19-mensaje-del-editor-bienvenidos-a-i-♥-e-poetry.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2016-04-19-mensaje-del-editor-bienvenidos-a-i-♥-e-poetry.html",
+      "source_lang": "es",
+      "target_lang": "en",
+      "source_permalink": "/es/news/mensaje-del-editor-bienvenidos-a-i-♥-e-poetry/",
+      "target_permalink": "/en/news/mensaje-del-editor-bienvenidos-a-i-♥-e-poetry/",
+      "title": "Mensaje del Editor: Bienvenidos a I ♥ E-Poetry",
+      "needs_body_translation": true,
+      "word_count": 269
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2016-04-19-ejemplos-de-literatura-electronica.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2016-04-19-ejemplos-de-literatura-electronica.html",
+      "source_lang": "es",
+      "target_lang": "en",
+      "source_permalink": "/es/resources/ejemplos-de-literatura-electronica/",
+      "target_permalink": "/en/resources/ejemplos-de-literatura-electronica/",
+      "title": "Ejemplos de Literatura Electrónica",
+      "needs_body_translation": true,
+      "word_count": 433
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2018-05-07-cfp-la-poetica-de-la-literatura-electronica.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2018-05-07-cfp-la-poetica-de-la-literatura-electronica.html",
+      "source_lang": "es",
+      "target_lang": "en",
+      "source_permalink": "/es/uncategorized/cfp-la-poetica-de-la-literatura-electronica/",
+      "target_permalink": "/en/uncategorized/cfp-la-poetica-de-la-literatura-electronica/",
+      "title": "CFP: la poética de la literatura electrónica",
+      "needs_body_translation": true,
+      "word_count": 147
+    },
+    {
+      "source_file": "/Users/floresll/Desktop/iloveepoetry/_posts/es/2015-11-03-i-♥-e-poetry-visita-la-feria-internacional-del-libro-eugenio-maria-de-hostos.html",
+      "target_file": "/Users/floresll/Desktop/iloveepoetry/_posts/en/2015-11-03-i-♥-e-poetry-visita-la-feria-internacional-del-libro-eugenio-maria-de-hostos.html",
+      "source_lang": "es",
+      "target_lang": "en",
+      "source_permalink": "/es/uncategorized/i-♥-e-poetry-visita-la-feria-internacional-del-libro-eugenio-maria-de-hostos/",
+      "target_permalink": "/en/uncategorized/i-♥-e-poetry-visita-la-feria-internacional-del-libro-eugenio-maria-de-hostos/",
+      "title": "I ♥ E-Poetry visita la Feria Internacional del Libro Eugenio María de Hostos",
+      "needs_body_translation": true,
+      "word_count": 509
+    }
+  ]
+}

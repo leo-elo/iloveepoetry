@@ -27,7 +27,7 @@ layout: default
       {{ content }}
     </div>
 
-    {% if page.work_url or page.elmcip_url or page.translation %}
+    {% if page.work_url or page.elmcip_url %}
     <div class="post-actions-row">
       {% if page.work_url %}
         {% if page.lang == 'es' %}
@@ -38,13 +38,6 @@ layout: default
       {% endif %}
       {% if page.elmcip_url %}
         <a href="{{ page.elmcip_url }}" class="post-action-btn" target="_blank" rel="noopener">ELMCIP</a>
-      {% endif %}
-      {% if page.translation %}
-        {% if page.lang == 'es' %}
-          <a href="{{ page.translation | relative_url }}" class="post-action-btn">Read in English</a>
-        {% else %}
-          <a href="{{ page.translation | relative_url }}" class="post-action-btn">Leer en Español</a>
-        {% endif %}
       {% endif %}
     </div>
     {% endif %}
