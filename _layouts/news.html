@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="container news-page">
+  <header class="category-header">
+    <h1 class="category-title">{% if page.lang == 'es' %}Noticias{% else %}News{% endif %}</h1>
+  </header>
+
+  <div class="posts-grid">
+    {% assign current_lang = page.lang | default: 'en' %}
+    {% assign news_cat = 'News' %}
+    {% if current_lang == 'es' %}
+      {% assign news_cat = 'Noticias' %}
+    {% endif %}
+
+    {% assign news_posts = "" | split: "" %}
+    {% for post in site.posts %}
+      {% assign post_lang = post.lang | default: 'en' %}
+      {% if post_lang == current_lang %}
+        {% for cat in post.categories %}
+          {% if cat == news_cat %}
+            {% assign news_posts = news_posts | push: post %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+
+    {% for post in news_posts %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+
+    {% if news_posts.size == 0 %}
+      <p>{% if current_lang == 'es' %}No hay noticias disponibles.{% else %}No news posts available.{% endif %}</p>
+    {% endif %}
+  </div>
+</div>

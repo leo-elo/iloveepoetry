@@ -3,33 +3,101 @@ layout: default
 ---
 
 <div class="container home-page">
-  <div class="posts-grid">
-    {% assign current_lang = page.lang | default: 'en' %}
-    {% assign filtered_posts = "" | split: "" %}
-    {% for post in site.posts %}
-      {% assign post_lang = post.lang | default: 'en' %}
-      {% if post_lang == current_lang %}
-        {% assign filtered_posts = filtered_posts | push: post %}
-      {% endif %}
-    {% endfor %}
+  {% assign current_lang = page.lang | default: 'en' %}
+  {% assign entries_cat = 'Entries' %}
+  {% if current_lang == 'es' %}
+    {% assign entries_cat = 'Entradas' %}
+  {% endif %}
 
-    {% assign paginate_count = 12 %}
-    {% for post in filtered_posts limit: paginate_count %}
+  {% assign entry_posts = "" | split: "" %}
+  {% for post in site.posts %}
+    {% assign post_lang = post.lang | default: 'en' %}
+    {% if post_lang == current_lang %}
+      {% for cat in post.categories %}
+        {% if cat == entries_cat %}
+          {% assign entry_posts = entry_posts | push: post %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+
+  <div class="posts-grid" id="postsGrid">
+    {% comment %}All entry post cards rendered but hidden; JS will show 12 random ones{% endcomment %}
+    {% for post in entry_posts %}
+    <div class="post-card-wrapper" data-post-index="{{ forloop.index0 }}" style="display:none;">
       {% include post-card.html post=post %}
+    </div>
     {% endfor %}
   </div>
 
-  {% if filtered_posts.size > paginate_count %}
-  <nav class="pagination" aria-label="{% if current_lang == 'es' %}Navegación de páginas{% else %}Page navigation{% endif %}">
-    <span class="pagination-info">
+  {% if entry_posts.size > 12 %}
+  <nav class="pagination" aria-label="{% if current_lang == 'es' %}Navegación de entradas{% else %}Entry navigation{% endif %}">
+    <span class="pagination-info" id="paginationInfo">
       {% if current_lang == 'es' %}
-        Mostrando {{ paginate_count }} de {{ filtered_posts.size }} entradas
+        Mostrando 12 de {{ entry_posts.size }} entradas
       {% else %}
-        Showing {{ paginate_count }} of {{ filtered_posts.size }} posts
+        Showing 12 of {{ entry_posts.size }} entries
       {% endif %}
     </span>
+    <a href="#" class="show-more-link" id="showMoreLink" onclick="showAnother12(event)">
+      {% if current_lang == 'es' %}
+        Mostrar otras 12 entradas
+      {% else %}
+        Show another 12 entries
+      {% endif %}
+    </a>
   </nav>
   {% endif %}
 
   {{ content }}
 </div>
+
+<script>
+(function() {
+  var grid = document.getElementById('postsGrid');
+  if (!grid) return;
+
+  var allCards = Array.prototype.slice.call(grid.querySelectorAll('.post-card-wrapper'));
+  var totalCount = allCards.length;
+  var showCount = Math.min(12, totalCount);
+
+  function shuffle(arr) {
+    for (var i = arr.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var temp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = temp;
+    }
+    return arr;
+  }
+
+  function showRandom12() {
+    // Hide all
+    for (var i = 0; i < allCards.length; i++) {
+      allCards[i].style.display = 'none';
+    }
+    // Pick random indices
+    var indices = [];
+    for (var i = 0; i < totalCount; i++) {
+      indices.push(i);
+    }
+    shuffle(indices);
+    var selected = indices.slice(0, showCount);
+    for (var i = 0; i < selected.length; i++) {
+      allCards[selected[i]].style.display = '';
+    }
+    // Scroll to top of grid
+    grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // Initial random selection
+  showRandom12();
+
+  // Expose for the button
+  window.showAnother12 = function(e) {
+    if (e) e.preventDefault();
+    showRandom12();
+  };
+})();
+</script>

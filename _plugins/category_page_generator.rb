@@ -25,10 +25,13 @@ module Jekyll
       # Collect all unique categories across all posts
       categories = {}
 
+      skip_categories = ['uncategorized', 'sin-categorizar']
+
       site.posts.docs.each do |post|
         post.data['categories'].each do |cat|
           cat_str = cat.to_s
           slug = Utils.slugify(cat_str)
+          next if skip_categories.include?(slug)
           categories[slug] ||= { name: cat_str, slug: slug }
         end
       end
