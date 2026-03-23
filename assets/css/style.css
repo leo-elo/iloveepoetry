@@ -89,9 +89,10 @@ img {
    Header
    ========================================================================== */
 .site-header {
-  background: #D9342A;
-  color: #fff;
+  background: #fff;
+  color: #222;
   padding: 1rem 0 0;
+  border-bottom: 2px solid #eee;
 }
 
 .header-inner {
@@ -111,24 +112,24 @@ img {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.75rem;
   font-weight: 700;
-  color: #fff;
+  color: #222;
   letter-spacing: 0.02em;
 }
 
 .site-title:visited,
 .site-title:hover {
-  color: #fff;
+  color: #222;
   text-decoration: none;
 }
 
 .site-title .heart {
-  color: #fff;
+  color: #D9342A;
   font-size: 1.2em;
 }
 
 .site-description {
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: #666;
   font-style: italic;
   margin: 0;
 }
@@ -155,24 +156,24 @@ img {
   display: inline-block;
   padding: 0.2rem 0.55rem;
   border-radius: 3px;
-  color: rgba(255, 255, 255, 0.7);
+  color: #888;
   transition: background 0.2s, color 0.2s;
 }
 
 .lang-option:hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.2);
+  color: #222;
+  background: #f0f0f0;
   text-decoration: none;
 }
 
 .lang-option.active {
-  background: #fff;
-  color: #D9342A;
+  background: #D9342A;
+  color: #fff;
   border-radius: 3px;
 }
 
 .lang-divider {
-  color: rgba(255, 255, 255, 0.5);
+  color: #ccc;
   user-select: none;
 }
 
@@ -192,7 +193,7 @@ img {
   display: block;
   width: 24px;
   height: 2px;
-  background: #fff;
+  background: #222;
   border-radius: 2px;
   transition: transform 0.3s, opacity 0.3s;
 }
@@ -200,7 +201,7 @@ img {
 /* --- Navigation --- */
 .site-nav {
   margin-top: 0.75rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid #eee;
 }
 
 .nav-list {
@@ -215,15 +216,15 @@ img {
 .nav-list li a:visited {
   display: block;
   padding: 0.7rem 1rem;
-  color: #fff;
+  color: #444;
   font-size: 0.9rem;
   font-weight: 500;
   transition: background 0.2s, color 0.2s;
 }
 
 .nav-list li a:hover {
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
+  background: #f5f5f5;
+  color: #D9342A;
   text-decoration: none;
 }
 
@@ -885,7 +886,8 @@ img {
     display: none;
     margin-top: 0;
     border-top: none;
-    background: #D9342A;
+    background: #fff;
+    border-top: 1px solid #eee;
   }
 
   .site-nav.open {
@@ -898,7 +900,7 @@ img {
 
   .nav-list li a {
     padding: 0.8rem 1.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid #eee;
   }
 
   .header-inner {
