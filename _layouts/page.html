@@ -2,21 +2,37 @@
 layout: default
 ---
 
-<article class="page-content">
-  <div class="container">
-    <h1 class="page-title">{{ page.title }}</h1>
-    <div class="page-body">
+<article class="post-single">
+  <header class="post-header-bar">
+    <div class="container">
+      <h1 class="post-title">{{ page.title }}</h1>
+    </div>
+  </header>
+
+  <div class="container post-body">
+    {% if page.featured_image %}
+    <div class="post-featured-image">
+      <img src="{{ page.featured_image | relative_url }}" alt="{{ page.title }}" loading="lazy">
+    </div>
+    {% endif %}
+
+    <div class="post-content">
       {{ content }}
     </div>
 
-    {% if page.translation %}
-    <div class="post-translation">
-      {% if page.lang == 'es' %}
-        <a href="{{ page.translation | relative_url }}" class="translation-link">Read in English</a>
-      {% else %}
-        <a href="{{ page.translation | relative_url }}" class="translation-link">Leer en Español</a>
+    <div class="post-metadata-box">
+      {% assign page_author = page.author | default: "Leonardo Flores" %}
+      <div class="metadata-section">
+        <span class="metadata-label">{% if page.lang == 'es' %}Página por{% else %}Page by{% endif %}:</span>
+        <span class="metadata-values">{{ page_author }}</span>
+      </div>
+      {% if page.translator %}
+      <div class="metadata-section">
+        <span class="metadata-label">{% if page.lang == 'es' %}Traducido por{% else %}Translated by{% endif %}:</span>
+        <span class="metadata-values">{{ page.translator }}</span>
+      </div>
       {% endif %}
     </div>
-    {% endif %}
+
   </div>
 </article>

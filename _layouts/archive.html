@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<article class="post-single">
+  <header class="post-header-bar">
+    <div class="container">
+      <h1 class="post-title">{{ page.title }}</h1>
+    </div>
+  </header>
+
+  <div class="container post-body">
+    <div class="post-content">
+      {% assign current_lang = page.lang | default: 'en' %}
+
+      {% assign lang_pages = "" | split: "" %}
+      {% for p in site.pages %}
+        {% if p.lang == current_lang and p.title and p.layout == 'page' %}
+          {% assign lang_pages = lang_pages | push: p %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign sorted_pages = lang_pages | sort: 'title' %}
+
+      <ul class="archive-list">
+        {% for p in sorted_pages %}
+        <li>
+          <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+
+      {{ content }}
+    </div>
+
+    <div class="post-metadata-box">
+      <div class="metadata-section">
+        <span class="metadata-label">{% if current_lang == 'es' %}Página por{% else %}Page by{% endif %}:</span>
+        <span class="metadata-values">Leonardo Flores</span>
+      </div>
+    </div>
+
+  </div>
+</article>
