@@ -311,6 +311,10 @@ img {
 }
 
 .post-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5em auto;
   border-radius: 4px;
 }
 
