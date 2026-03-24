@@ -20,9 +20,5 @@
         {{ post.date | date: "%B %-d, %Y" }}
       {% endif %}
     </time>
-    <p class="post-card-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-    <a href="{{ post.url | relative_url }}" class="post-card-read-more">
-      {% if current_lang == 'es' %}Seguir leyendo &rarr;{% else %}Continue reading &rarr;{% endif %}
-    </a>
   </div>
 </article>

@@ -1,19 +1,22 @@
 module Jekyll
   class CategoryPage < Page
-    def initialize(site, base, dir, category_name, category_slug, lang, filtered_posts)
+    def initialize(site, base, dir, category_name, category_slug, lang)
       @site = site
       @base = base
       @dir = dir
       @name = "#{category_slug}.html"
 
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), 'category.html')
 
-      self.data['title'] = category_name
-      self.data['category_name'] = category_name
-      self.data['category_slug'] = category_slug
-      self.data['lang'] = lang
-      self.data['filtered_posts'] = filtered_posts
+      # Don't use read_yaml - set data directly to avoid shared Liquid state
+      self.data = {
+        'layout' => 'category',
+        'title' => category_name,
+        'category_name' => category_name,
+        'category_slug' => category_slug,
+        'lang' => lang,
+      }
+      self.content = ''
     end
   end
 
@@ -39,16 +42,6 @@ module Jekyll
       # For each category, generate EN and ES pages
       categories.each_value do |cat_info|
         ['en', 'es'].each do |lang|
-          # Filter posts by language and category
-          filtered = site.posts.docs.select do |post|
-            post_lang = post.data['lang'] || 'en'
-            post_cats = (post.data['categories'] || []).map { |c| Utils.slugify(c.to_s) }
-            post_lang == lang && post_cats.include?(cat_info[:slug])
-          end
-
-          # Sort by date descending
-          filtered.sort_by! { |p| p.date }.reverse!
-
           dir = File.join(lang, 'category')
           site.pages << CategoryPage.new(
             site,
@@ -56,8 +49,7 @@ module Jekyll
             dir,
             cat_info[:name],
             cat_info[:slug],
-            lang,
-            filtered
+            lang
           )
         end
       end

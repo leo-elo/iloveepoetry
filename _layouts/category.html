@@ -7,24 +7,94 @@ layout: default
     <h1 class="category-title">{{ page.category_name }}</h1>
   </header>
 
-  <div class="posts-grid">
-    {% assign current_lang = page.lang | default: 'en' %}
-    {% for post in page.filtered_posts %}
-      {% include post-card.html post=post %}
-    {% endfor %}
+  {% assign current_lang = page.lang | default: 'en' %}
+  {% assign target_slug = page.category_slug %}
+  {% assign cat_posts = "" | split: "" %}
 
-    {% if page.filtered_posts.size == 0 %}
-      {% for post in site.posts %}
-        {% assign post_lang = post.lang | default: 'en' %}
-        {% if post_lang == current_lang %}
-          {% for cat in post.categories %}
-            {% assign cat_slug = cat | append: "" | slugify %}
-            {% if cat_slug == page.category_slug %}
-              {% include post-card.html post=post %}
-            {% endif %}
-          {% endfor %}
+  {% for post in site.posts %}
+    {% assign post_lang = post.lang | default: 'en' %}
+    {% if post_lang == current_lang %}
+      {% for cat in post.categories %}
+        {% assign cat_slug = cat | append: "" | slugify %}
+        {% if cat_slug == target_slug %}
+          {% assign cat_posts = cat_posts | push: post %}
+          {% break %}
         {% endif %}
       {% endfor %}
     {% endif %}
+  {% endfor %}
+
+  <div class="posts-grid" id="catGrid">
+    {% for post in cat_posts %}
+    <div class="cat-card-wrapper" data-cat-index="{{ forloop.index0 }}" style="display:none;">
+      {% include post-card.html post=post %}
+    </div>
+    {% endfor %}
   </div>
+
+  {% if cat_posts.size > 0 %}
+  <nav class="pagination" id="catPagination">
+    <a href="#" class="news-nav-btn" id="catNewerBtn" onclick="catNewer(event)" style="display:none;">
+      {% if current_lang == 'es' %}&larr; Más recientes{% else %}&larr; Newer{% endif %}
+    </a>
+    <span class="pagination-info" id="catInfo"></span>
+    <a href="#" class="news-nav-btn" id="catOlderBtn" onclick="catOlder(event)" style="display:none;">
+      {% if current_lang == 'es' %}Anteriores &rarr;{% else %}Older &rarr;{% endif %}
+    </a>
+  </nav>
+  {% endif %}
+
+  {{ content }}
 </div>
+
+<script>
+(function() {
+  var grid = document.getElementById('catGrid');
+  if (!grid) return;
+  var allCards = Array.prototype.slice.call(grid.querySelectorAll('.cat-card-wrapper'));
+  var totalCount = allCards.length;
+  if (totalCount === 0) return;
+  var perPage = 12;
+  var currentPage = 0;
+  var totalPages = Math.ceil(totalCount / perPage);
+  var lang = '{{ current_lang }}';
+
+  function showPage(p) {
+    currentPage = p;
+    var start = p * perPage;
+    var end = Math.min(start + perPage, totalCount);
+    for (var i = 0; i < allCards.length; i++) {
+      allCards[i].style.display = (i >= start && i < end) ? '' : 'none';
+    }
+    var info = document.getElementById('catInfo');
+    if (info) {
+      if (lang === 'es') {
+        info.textContent = 'Mostrando ' + (start+1) + '\u2013' + end + ' de ' + totalCount;
+      } else {
+        info.textContent = 'Showing ' + (start+1) + '\u2013' + end + ' of ' + totalCount;
+      }
+    }
+    var newerBtn = document.getElementById('catNewerBtn');
+    var olderBtn = document.getElementById('catOlderBtn');
+    if (newerBtn) newerBtn.style.display = (currentPage > 0) ? '' : 'none';
+    if (olderBtn) olderBtn.style.display = (currentPage < totalPages - 1) ? '' : 'none';
+  }
+
+  showPage(0);
+
+  window.catOlder = function(e) {
+    if (e) e.preventDefault();
+    if (currentPage < totalPages - 1) {
+      showPage(currentPage + 1);
+      grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+  window.catNewer = function(e) {
+    if (e) e.preventDefault();
+    if (currentPage > 0) {
+      showPage(currentPage - 1);
+      grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+})();
+</script>
