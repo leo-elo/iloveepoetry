@@ -15,7 +15,7 @@
     </h2>
     <time class="post-card-date" datetime="{{ post.date | date_to_xmlschema }}">
       {% if current_lang == 'es' %}
-        {{ post.date | date: "%d de %B de %Y" }}
+        {% include spanish-date.html date=post.date %}
       {% else %}
         {{ post.date | date: "%B %-d, %Y" }}
       {% endif %}

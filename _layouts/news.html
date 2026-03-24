@@ -7,32 +7,96 @@ layout: default
     <h1 class="category-title">{% if page.lang == 'es' %}Noticias{% else %}News{% endif %}</h1>
   </header>
 
-  <div class="posts-grid">
-    {% assign current_lang = page.lang | default: 'en' %}
-    {% assign news_cat = 'News' %}
-    {% if current_lang == 'es' %}
-      {% assign news_cat = 'Noticias' %}
+  {% assign current_lang = page.lang | default: 'en' %}
+  {% assign news_cat = 'News' %}
+  {% if current_lang == 'es' %}
+    {% assign news_cat = 'Noticias' %}
+  {% endif %}
+
+  {% assign news_posts = "" | split: "" %}
+  {% for post in site.posts %}
+    {% assign post_lang = post.lang | default: 'en' %}
+    {% if post_lang == current_lang %}
+      {% for cat in post.categories %}
+        {% if cat == news_cat %}
+          {% assign news_posts = news_posts | push: post %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
     {% endif %}
+  {% endfor %}
 
-    {% assign news_posts = "" | split: "" %}
-    {% for post in site.posts %}
-      {% assign post_lang = post.lang | default: 'en' %}
-      {% if post_lang == current_lang %}
-        {% for cat in post.categories %}
-          {% if cat == news_cat %}
-            {% assign news_posts = news_posts | push: post %}
-            {% break %}
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-    {% endfor %}
-
+  <div class="posts-grid" id="newsGrid">
     {% for post in news_posts %}
+    <div class="news-card-wrapper" data-news-index="{{ forloop.index0 }}" style="display:none;">
       {% include post-card.html post=post %}
+    </div>
     {% endfor %}
-
-    {% if news_posts.size == 0 %}
-      <p>{% if current_lang == 'es' %}No hay noticias disponibles.{% else %}No news posts available.{% endif %}</p>
-    {% endif %}
   </div>
+
+  {% if news_posts.size > 0 %}
+  <nav class="pagination" id="newsPagination">
+    <a href="#" class="news-nav-btn" id="newsNewerBtn" onclick="newsNewer(event)" style="display:none;">
+      {% if current_lang == 'es' %}&larr; Más recientes{% else %}&larr; Newer{% endif %}
+    </a>
+    <span class="pagination-info" id="newsInfo"></span>
+    <a href="#" class="news-nav-btn" id="newsOlderBtn" onclick="newsOlder(event)">
+      {% if current_lang == 'es' %}Anteriores &rarr;{% else %}Older &rarr;{% endif %}
+    </a>
+  </nav>
+  {% endif %}
+
+  {{ content }}
 </div>
+
+<script>
+(function() {
+  var grid = document.getElementById('newsGrid');
+  if (!grid) return;
+
+  var allCards = Array.prototype.slice.call(grid.querySelectorAll('.news-card-wrapper'));
+  var totalCount = allCards.length;
+  var perPage = 12;
+  var currentPage = 0;
+  var totalPages = Math.ceil(totalCount / perPage);
+
+  var infoEl = document.getElementById('newsInfo');
+  var newerBtn = document.getElementById('newsNewerBtn');
+  var olderBtn = document.getElementById('newsOlderBtn');
+
+  var lang = document.documentElement.lang || 'en';
+
+  function showPage(page) {
+    currentPage = page;
+    var start = page * perPage;
+    var end = Math.min(start + perPage, totalCount);
+
+    for (var i = 0; i < allCards.length; i++) {
+      allCards[i].style.display = (i >= start && i < end) ? '' : 'none';
+    }
+
+    if (lang === 'es') {
+      infoEl.textContent = 'Mostrando ' + (start + 1) + '–' + end + ' de ' + totalCount + ' noticias';
+    } else {
+      infoEl.textContent = 'Showing ' + (start + 1) + '–' + end + ' of ' + totalCount + ' news posts';
+    }
+
+    newerBtn.style.display = (currentPage > 0) ? '' : 'none';
+    olderBtn.style.display = (currentPage < totalPages - 1) ? '' : 'none';
+
+    grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  window.newsOlder = function(e) {
+    if (e) e.preventDefault();
+    if (currentPage < totalPages - 1) showPage(currentPage + 1);
+  };
+
+  window.newsNewer = function(e) {
+    if (e) e.preventDefault();
+    if (currentPage > 0) showPage(currentPage - 1);
+  };
+
+  showPage(0);
+})();
+</script>
