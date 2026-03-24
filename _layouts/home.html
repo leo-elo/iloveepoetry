@@ -72,7 +72,7 @@ layout: default
     return arr;
   }
 
-  function showRandom12() {
+  function showRandom12(scroll) {
     // Hide all
     for (var i = 0; i < allCards.length; i++) {
       allCards[i].style.display = 'none';
@@ -87,17 +87,18 @@ layout: default
     for (var i = 0; i < selected.length; i++) {
       allCards[selected[i]].style.display = '';
     }
-    // Scroll to top of grid
-    grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (scroll) {
+      grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 
-  // Initial random selection
-  showRandom12();
+  // Initial random selection (no scroll)
+  showRandom12(false);
 
   // Expose for the button
   window.showAnother12 = function(e) {
     if (e) e.preventDefault();
-    showRandom12();
+    showRandom12(true);
   };
 })();
 </script>
