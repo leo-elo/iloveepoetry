@@ -80,7 +80,9 @@ layout: default
         <span class="metadata-label">{% if page.lang == 'es' %}Autor(es){% else %}Author(s){% endif %}:</span>
         <span class="metadata-values">
           {% for tag in page.tags %}
-            {{ tag }}{% unless forloop.last %}, {% endunless %}
+            {% assign tag_str = tag | append: "" %}
+            {% assign tag_slug = tag_str | slugify %}
+            <a href="{{ '/' | append: page.lang | append: '/tag/' | append: tag_slug | append: '.html' | relative_url }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
           {% endfor %}
         </span>
       </div>

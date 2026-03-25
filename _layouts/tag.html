@@ -4,42 +4,41 @@ layout: default
 
 <div class="container category-page">
   <header class="category-header">
-    {% if page.lang == 'es' %}
-      <h1 class="category-title">Publicaciones por {{ page.author_name }}</h1>
-    {% else %}
-      <h1 class="category-title">Posts by {{ page.author_name }}</h1>
-    {% endif %}
+    <h1 class="category-title">{{ page.tag_name }}</h1>
   </header>
 
   {% assign current_lang = page.lang | default: 'en' %}
-  {% assign target_slug = page.author_slug %}
-  {% assign author_posts = "" | split: "" %}
+  {% assign target_slug = page.tag_slug %}
+  {% assign tag_posts = "" | split: "" %}
 
   {% for post in site.posts %}
     {% assign post_lang = post.lang | default: 'en' %}
     {% if post_lang == current_lang %}
-      {% assign post_author_slug = post.author | slugify %}
-      {% if post_author_slug == target_slug %}
-        {% assign author_posts = author_posts | push: post %}
-      {% endif %}
+      {% for tag in post.tags %}
+        {% assign tag_slug = tag | append: "" | slugify %}
+        {% if tag_slug == target_slug %}
+          {% assign tag_posts = tag_posts | push: post %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
     {% endif %}
   {% endfor %}
 
-  <div class="posts-grid" id="authorGrid">
-    {% for post in author_posts %}
-    <div class="author-card-wrapper" data-author-index="{{ forloop.index0 }}" style="display:none;">
+  <div class="posts-grid" id="tagGrid">
+    {% for post in tag_posts %}
+    <div class="tag-card-wrapper" data-tag-index="{{ forloop.index0 }}" style="display:none;">
       {% include post-card.html post=post %}
     </div>
     {% endfor %}
   </div>
 
-  {% if author_posts.size > 0 %}
-  <nav class="pagination" id="authorPagination">
-    <a href="#" class="news-nav-btn" id="authorNewerBtn" onclick="authorNewer(event)" style="display:none;">
+  {% if tag_posts.size > 0 %}
+  <nav class="pagination" id="tagPagination">
+    <a href="#" class="news-nav-btn" id="tagNewerBtn" onclick="tagNewer(event)" style="display:none;">
       {% if current_lang == 'es' %}&larr; Más recientes{% else %}&larr; Newer{% endif %}
     </a>
-    <span class="pagination-info" id="authorInfo"></span>
-    <a href="#" class="news-nav-btn" id="authorOlderBtn" onclick="authorOlder(event)" style="display:none;">
+    <span class="pagination-info" id="tagInfo"></span>
+    <a href="#" class="news-nav-btn" id="tagOlderBtn" onclick="tagOlder(event)" style="display:none;">
       {% if current_lang == 'es' %}Anteriores &rarr;{% else %}Older &rarr;{% endif %}
     </a>
   </nav>
@@ -50,9 +49,9 @@ layout: default
 
 <script>
 (function() {
-  var grid = document.getElementById('authorGrid');
+  var grid = document.getElementById('tagGrid');
   if (!grid) return;
-  var allCards = Array.prototype.slice.call(grid.querySelectorAll('.author-card-wrapper'));
+  var allCards = Array.prototype.slice.call(grid.querySelectorAll('.tag-card-wrapper'));
   var totalCount = allCards.length;
   if (totalCount === 0) return;
   var perPage = 12;
@@ -67,7 +66,7 @@ layout: default
     for (var i = 0; i < allCards.length; i++) {
       allCards[i].style.display = (i >= start && i < end) ? '' : 'none';
     }
-    var info = document.getElementById('authorInfo');
+    var info = document.getElementById('tagInfo');
     if (info) {
       if (lang === 'es') {
         info.textContent = 'Mostrando ' + (start+1) + '\u2013' + end + ' de ' + totalCount;
@@ -75,22 +74,22 @@ layout: default
         info.textContent = 'Showing ' + (start+1) + '\u2013' + end + ' of ' + totalCount;
       }
     }
-    var newerBtn = document.getElementById('authorNewerBtn');
-    var olderBtn = document.getElementById('authorOlderBtn');
+    var newerBtn = document.getElementById('tagNewerBtn');
+    var olderBtn = document.getElementById('tagOlderBtn');
     if (newerBtn) newerBtn.style.display = (currentPage > 0) ? '' : 'none';
     if (olderBtn) olderBtn.style.display = (currentPage < totalPages - 1) ? '' : 'none';
   }
 
   showPage(0);
 
-  window.authorOlder = function(e) {
+  window.tagOlder = function(e) {
     if (e) e.preventDefault();
     if (currentPage < totalPages - 1) {
       showPage(currentPage + 1);
       grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
-  window.authorNewer = function(e) {
+  window.tagNewer = function(e) {
     if (e) e.preventDefault();
     if (currentPage > 0) {
       showPage(currentPage - 1);
