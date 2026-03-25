@@ -8,8 +8,40 @@ translation: "/es/contacto/"
 author: "Leonardo Flores"
 ---
 
-Please enter any feedback, suggestions, requests, recommendations, corrections, bug reports or whatever else you feel compelled to share.
+<div class="contact-info">
+  <p><strong>Publisher:</strong> <a href="https://leonardoflores.net" target="_blank" rel="noopener">Leonardo Flores</a></p>
+  <p><strong>Email:</strong> <a href="mailto:leo@eliterature.org">leo@eliterature.org</a></p>
+</div>
 
-[contact-form][contact-field label='Name' type='name' required='1'/][contact-field label='Email' type='email' required='1'/][contact-field label='Subject' type='select' required='1' options='Feedback,Suggestion,Request,Recommendation,Correction,Bug fix,Other'/][contact-field label='Comment' type='textarea' required='1'/][/contact-form]
+<p>Please enter any feedback, suggestions, requests, recommendations, corrections, bug reports or whatever else you feel compelled to share.</p>
 
-Thank you!
+<form class="contact-form" action="mailto:leo@eliterature.org" method="post" enctype="text/plain">
+  <div class="form-group">
+    <label for="contact-name">Name <span class="required">*</span></label>
+    <input type="text" id="contact-name" name="Name" required>
+  </div>
+  <div class="form-group">
+    <label for="contact-email">Email <span class="required">*</span></label>
+    <input type="email" id="contact-email" name="Email" required>
+  </div>
+  <div class="form-group">
+    <label for="contact-subject">Subject <span class="required">*</span></label>
+    <select id="contact-subject" name="Subject" required>
+      <option value="">— Select —</option>
+      <option value="Feedback">Feedback</option>
+      <option value="Suggestion">Suggestion</option>
+      <option value="Request">Request</option>
+      <option value="Recommendation">Recommendation</option>
+      <option value="Correction">Correction</option>
+      <option value="Bug fix">Bug fix</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="contact-comment">Comment <span class="required">*</span></label>
+    <textarea id="contact-comment" name="Comment" rows="6" required></textarea>
+  </div>
+  <button type="submit" class="post-action-btn">Send</button>
+</form>
+
+<p>Thank you!</p>

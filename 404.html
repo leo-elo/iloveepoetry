@@ -5,27 +5,24 @@ lang: en
 permalink: /404.html
 ---
 <div style="text-align: center; padding: 3rem 1rem;">
-    <h1>Page Not Found</h1>
+    <h1 id="page-title">Page Not Found</h1>
     <p id="redirect-message">The page you're looking for doesn't exist or has moved.</p>
-    <p>Try browsing from the <a href="{{ '/en/' | relative_url }}">English homepage</a> or <a href="{{ '/es/' | relative_url }}">Spanish homepage</a>.</p>
+    <p id="redirect-info" style="display:none; font-size: 1.1rem; color: #D9342A; font-weight: bold;">We found the correct page &mdash; redirecting you now...</p>
+    <p id="fallback-links">Try browsing from the <a href="{{ '/en/' | relative_url }}">English homepage</a> or <a href="{{ '/es/' | relative_url }}">Spanish homepage</a>.</p>
     <p>Or use the search bar below to find what you're looking for.</p>
 </div>
 
 <script>
-// Attempt to redirect old WordPress URLs to new Jekyll URLs
 (function() {
     var urlMap = null;
 
-    // Try to load URL map
     fetch('{{ "/assets/url_map.json" | relative_url }}')
         .then(function(resp) { return resp.json(); })
         .then(function(data) {
             urlMap = data;
             attemptRedirect();
         })
-        .catch(function() {
-            // URL map not available, just show 404
-        });
+        .catch(function() {});
 
     function attemptRedirect() {
         if (!urlMap) return;
@@ -35,9 +32,9 @@ permalink: /404.html
         var search = window.location.search;
         var params = new URLSearchParams(search);
 
-        // Try ?p=ID redirect
-        if (params.has('p')) {
-            var postId = params.get('p');
+        // Try ?p=ID or ?page_id=ID redirect
+        var postId = params.get('p') || params.get('page_id');
+        if (postId) {
             var key = 'p_' + postId;
             if (urlMap[key]) {
                 showRedirect(baseurl + urlMap[key]);
@@ -45,7 +42,7 @@ permalink: /404.html
             }
         }
 
-        // Try slug-based redirect
+        // Try full path slug redirect
         var slug = path.replace(baseurl, '').replace(/^\/+|\/+$/g, '');
         if (slug) {
             var key = 'slug/' + slug;
@@ -66,7 +63,11 @@ permalink: /404.html
 
     function showRedirect(newUrl) {
         var msg = document.getElementById('redirect-message');
-        msg.innerHTML = 'Redirecting to <a href="' + newUrl + '">' + newUrl + '</a>...';
+        var info = document.getElementById('redirect-info');
+        var title = document.getElementById('page-title');
+        title.textContent = 'Redirecting...';
+        msg.innerHTML = 'This page has moved to a new location: <a href="' + newUrl + '">' + newUrl + '</a>';
+        info.style.display = '';
         setTimeout(function() {
             window.location.href = newUrl;
         }, 1500);

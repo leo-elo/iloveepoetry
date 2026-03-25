@@ -654,6 +654,49 @@ img {
 }
 
 /* ==========================================================================
+   Contact Form
+   ========================================================================== */
+.contact-info {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+.contact-info p {
+  margin: 0.3rem 0;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 1.5rem 0;
+}
+.contact-form .form-group {
+  margin-bottom: 1rem;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+.contact-form .required {
+  color: #D9342A;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #D9342A;
+  outline: none;
+}
+
+/* ==========================================================================
    Footer
    ========================================================================== */
 .site-footer {
