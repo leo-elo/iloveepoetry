@@ -6,16 +6,17 @@
   var searchResults = document.getElementById("searchResults");
   var debounceTimer = null;
 
-  // Detect baseurl from the current page's path or fall back to /iloveepoetry
+  // Detect baseurl from the site's configuration
   function getBaseUrl() {
-    // Check for a meta tag or known path pattern
-    var path = window.location.pathname;
-    // If served with a baseurl like /iloveepoetry, extract it
-    var match = path.match(/^(\/iloveepoetry)/);
-    if (match) {
-      return match[1];
+    // Check for a link[rel=stylesheet] to infer baseurl
+    var link = document.querySelector('link[rel="stylesheet"]');
+    if (link) {
+      var href = link.getAttribute('href');
+      var match = href.match(/^(.*?)\/assets\//);
+      if (match && match[1]) {
+        return match[1];
+      }
     }
-    // If running at root
     return "";
   }
 
@@ -65,8 +66,13 @@
       return;
     }
 
+    // Detect current language from URL
+    var currentLang = window.location.pathname.indexOf('/es/') !== -1 ? 'es' : 'en';
+
     var results = [];
     for (var i = 0; i < searchData.length; i++) {
+      var postLang = searchData[i].lang || 'en';
+      if (postLang !== currentLang) continue;
       var s = scorePost(searchData[i], query);
       if (s > 0) {
         results.push({ post: searchData[i], score: s });
