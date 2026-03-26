@@ -1,7 +1,7 @@
 title: "I Love E-Poetry"
 description: "Short form scholarship on born-digital poetry."
-url: "https://leo-elo.github.io"
-baseurl: "/iloveepoetry"
+url: "https://iloveepoetry.org"
+baseurl: ""
 author: "Leonardo Flores"
 
 # Build
