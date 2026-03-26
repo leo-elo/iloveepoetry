@@ -3,7 +3,7 @@
   <div class="container header-inner">
     <div class="header-brand">
       <a href="{{ '/' | relative_url }}" class="site-title">I <span class="heart">&hearts;</span> E-Poetry</a>
-      <p class="site-description">Short form scholarship on born-digital poetry.</p>
+      <p class="site-description">{% if current_lang == 'es' %}Microcrítica de la poesía digital.{% else %}Short form scholarship on digital poetry.{% endif %}</p>
     </div>
 
     <div class="header-right">
