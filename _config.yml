@@ -5,6 +5,7 @@ baseurl: ""
 author: "Leonardo Flores"
 
 # Build
+future: true
 markdown: kramdown
 highlighter: rouge
 
