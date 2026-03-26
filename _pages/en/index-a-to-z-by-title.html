@@ -48,6 +48,9 @@ author: "Leonardo Flores"
   {% if first_char == '#' %}
     {% assign first_char = raw_title | slice: 1 | upcase %}
   {% endif %}
+  {% if first_char == '@' %}
+    {% assign first_char = raw_title | slice: 1 | upcase %}
+  {% endif %}
   {% unless first_char >= 'A' and first_char <= 'Z' %}
     {% assign first_char = '#' %}
   {% endunless %}
