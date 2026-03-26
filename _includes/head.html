@@ -3,24 +3,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncatewords: 50 }}">
+  <meta name="keywords" content="Poetry, electronic poetry, e-poetry, digital poetry, scholarship, poesía, poesía electrónica, poesía digital">
+  <meta name="author" content="Leonardo Flores">
 
   <!-- Open Graph -->
   <meta property="og:title" content="{{ page.title | default: site.title }}">
   <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | truncatewords: 50 }}">
   <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
-  {% if page.featured_image %}
-  <meta property="og:image" content="{{ page.featured_image | absolute_url }}">
-  {% endif %}
+  <meta property="og:image" content="{% if page.featured_image %}{{ page.featured_image | absolute_url }}{% else %}{{ '/assets/images/iloveepoetryfeatured.png' | absolute_url }}{% endif %}">
   <meta property="og:locale" content="{% if page.lang == 'es' %}es_ES{% else %}en_US{% endif %}">
+  <meta property="og:site_name" content="I ♥ E-Poetry">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page.title | default: site.title }}">
   <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | truncatewords: 50 }}">
-  {% if page.featured_image %}
-  <meta name="twitter:image" content="{{ page.featured_image | absolute_url }}">
-  {% endif %}
+  <meta name="twitter:image" content="{% if page.featured_image %}{{ page.featured_image | absolute_url }}{% else %}{{ '/assets/images/iloveepoetryfeatured.png' | absolute_url }}{% endif %}">
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
