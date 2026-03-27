@@ -2,13 +2,10 @@
   "use strict";
 
   var searchData = null;
-  var searchInput = document.getElementById("footerSearchInput");
-  var searchResults = document.getElementById("searchResults");
   var debounceTimer = null;
 
   // Detect baseurl from the site's configuration
   function getBaseUrl() {
-    // Check for a link[rel=stylesheet] to infer baseurl
     var link = document.querySelector('link[rel="stylesheet"]');
     if (link) {
       var href = link.getAttribute('href');
@@ -52,7 +49,7 @@
     if (post.excerpt && post.excerpt.toLowerCase().indexOf(q) !== -1) {
       score += 5;
     }
-    if (post.category && post.category.toLowerCase().indexOf(q) !== -1) {
+    if (post.category && String(post.category).toLowerCase().indexOf(q) !== -1) {
       score += 3;
     }
 
@@ -61,6 +58,7 @@
 
   // Perform the search
   function performSearch(query) {
+    var searchResults = document.getElementById("searchResults");
     if (!searchData || !query || query.trim().length < 2) {
       hideResults();
       return;
@@ -92,6 +90,7 @@
 
   // Display results in the dropdown
   function displayResults(results, query) {
+    var searchResults = document.getElementById("searchResults");
     if (!searchResults) return;
 
     if (results.length === 0) {
@@ -131,6 +130,7 @@
   }
 
   function hideResults() {
+    var searchResults = document.getElementById("searchResults");
     if (searchResults) {
       searchResults.classList.add("hidden");
       searchResults.innerHTML = "";
@@ -152,35 +152,41 @@
     return str.substring(0, len) + "...";
   }
 
-  // Debounced search input
-  if (searchInput) {
-    searchInput.addEventListener("focus", function () {
-      loadSearchData();
-    });
+  // Load search data eagerly
+  loadSearchData();
 
-    searchInput.addEventListener("input", function () {
-      var query = this.value;
-      clearTimeout(debounceTimer);
-      debounceTimer = setTimeout(function () {
-        performSearch(query);
-      }, 300);
-    });
-  }
-
-  // Close results on outside click
-  document.addEventListener("click", function (e) {
-    if (
-      searchResults &&
-      searchInput &&
-      !searchResults.contains(e.target) &&
-      e.target !== searchInput
-    ) {
-      hideResults();
-    }
-  });
-
-  // Mobile hamburger menu toggle
+  // Initialize search on DOMContentLoaded to ensure footer elements exist
   document.addEventListener("DOMContentLoaded", function () {
+    var searchInput = document.getElementById("footerSearchInput");
+    var searchResults = document.getElementById("searchResults");
+
+    if (searchInput) {
+      searchInput.addEventListener("focus", function () {
+        loadSearchData();
+      });
+
+      searchInput.addEventListener("input", function () {
+        var query = this.value;
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(function () {
+          performSearch(query);
+        }, 300);
+      });
+    }
+
+    // Close results on outside click
+    document.addEventListener("click", function (e) {
+      if (
+        searchResults &&
+        searchInput &&
+        !searchResults.contains(e.target) &&
+        e.target !== searchInput
+      ) {
+        hideResults();
+      }
+    });
+
+    // Mobile hamburger menu toggle
     var toggle = document.querySelector(".hamburger-toggle");
     var nav = document.getElementById("siteNav");
 

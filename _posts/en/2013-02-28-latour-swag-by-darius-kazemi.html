@@ -33,7 +33,7 @@ elmcip_url: "https://elmcip.net/node/6955"
 
 
 
-This Twitter bot produces a mashup of the “<a href="/iloveepoetry/en/2013/bruno-latourbot-by-anonymous/" target="_blank">Bruno Latourbot</a>” and original tweets that use the #swag hashtag. Kazemi describes the selection algorithm in detail in this excerpt from <a href="http://tinysubversions.com/2013/01/new-twitter-bot-latourswag/" target="_blank">his blog posting</a> about the creation of this bot.
+This Twitter bot produces a mashup of the “<a href="/en/2013/bruno-latourbot-by-anonymous/" target="_blank">Bruno Latourbot</a>” and original tweets that use the #swag hashtag. Kazemi describes the selection algorithm in detail in this excerpt from <a href="http://tinysubversions.com/2013/01/new-twitter-bot-latourswag/" target="_blank">his blog posting</a> about the creation of this bot.
 <blockquote>Basically how it works is I get <a href="http://search.twitter.com/search.json?callback=?&amp;rpp=100&amp;q=%27%23swag+and%27" target="_blank">the last 100 Twitter search results for “#swag” that also contain the word “and”</a>. Then I grab the last <a href="http://search.twitter.com/search.json?callback=?&amp;rpp=100&amp;q=%27from:latourbot%27" target="_blank">100 tweets from @LatourBot</a>. I take every #swag tweet that’s not an RT and push it to an array. I take every @latourbot tweet that has “and” or “,” in it, and push it to an array. Then I say there’s a 50% chance it will be latour-then-swag, and 50% that it will be swag-then-latour. If Latour comes first, I take a random Latour tweet from the array and take all the text up to the “and” or the “,”. Then I take a random swag tweet and take the text <em>after</em> the “and” in it. Then I do <em>latour + ” and ” + swag</em>. There you go.</blockquote>
 Here’s a link to the <a href="https://github.com/dariusk/latourswag" target="_blank">source code</a>.
 
@@ -48,4 +48,4 @@ I suspect the common usage of the term (and Kazemi’s) refers to personal ornam
 What is most interesting about this bot is that it places some of Bruno Latour’s language in conversation with popular statements about swag, however one may define it. This bot generates a tweet-sized line of <a href="http://en.wikipedia.org/wiki/Flarf_poetry" target="_blank">Flarf poetry</a> every 15 minutes, with surprisingly coherent and humorous results.
 
 <br><br>
-<strong>Featured in <a href="/iloveepoetry/en/adult/genre-bot/">Genre: Bot</a></strong>
+<strong>Featured in <a href="/en/adult/genre-bot/">Genre: Bot</a></strong>
