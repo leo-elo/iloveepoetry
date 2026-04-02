@@ -7,6 +7,19 @@
     </div>
 
     <div class="header-right">
+      <div class="header-search">
+        <label for="headerSearchInput" class="sr-only">
+          {% if current_lang == 'es' %}Buscar{% else %}Search{% endif %}
+        </label>
+        <input
+          type="search"
+          id="headerSearchInput"
+          class="search-input"
+          placeholder="{% if current_lang == 'es' %}Buscar...{% else %}Search...{% endif %}"
+          autocomplete="off"
+        >
+        <div id="searchResults" class="search-results hidden"></div>
+      </div>
       {% include lang-switcher.html %}
       <button class="hamburger-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span class="hamburger-bar"></span>
@@ -25,6 +38,7 @@
           <li><a href="{{ '/es/acerca-de/' | relative_url }}">Acerca de</a></li>
           <li><a href="{{ '/es/indice-a-a-z-por-titulo/' | relative_url }}">&Iacute;ndice</a></li>
           <li><a href="{{ '/es/archivo/' | relative_url }}">Archivo</a></li>
+          <li><a href="{{ '/es/alojado/' | relative_url }}">Obras Alojadas</a></li>
           <li><a href="{{ '/es/contacto/' | relative_url }}">Contacto</a></li>
         {% else %}
           <li><a href="{{ '/en/' | relative_url }}">Entries</a></li>
@@ -32,6 +46,7 @@
           <li><a href="{{ '/en/about/' | relative_url }}">About</a></li>
           <li><a href="{{ '/en/index-a-to-z-by-title/' | relative_url }}">Index</a></li>
           <li><a href="{{ '/en/archive/' | relative_url }}">Archive</a></li>
+          <li><a href="{{ '/en/hosted/' | relative_url }}">Hosted Works</a></li>
           <li><a href="{{ '/en/feedback/' | relative_url }}">Contact</a></li>
         {% endif %}
       </ul>
